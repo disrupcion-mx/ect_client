@@ -1,0 +1,12 @@
+.intro dt {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.intro dd {
+  margin: 0.2rem 0 1rem;
+}
+
+.intro .tagline {
+  text-align: center;
+}
