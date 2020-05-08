@@ -1,0 +1,8 @@
+.hero {
+  text-align: center;
+  word-break: break-all;
+}
+
+.hero h1 {
+  margin: 1rem 0 2rem;
+}
