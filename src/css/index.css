@@ -38,3 +38,9 @@ code {
 .text-right {
   text-align: right;
 }
+
+@media(max-width: 567px) {
+  #app {
+    max-width: 100%;
+  }
+}

@@ -3,3 +3,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+.social a {
+  margin-left: 16px;
+  font-size: 24px;
+}
