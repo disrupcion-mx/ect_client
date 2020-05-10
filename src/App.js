@@ -3,6 +3,7 @@ import Header from './Header.js';
 import Hero from './Hero.js';
 import Intro from './Intro.js';
 import Ranking from './Ranking.js';
+import Downloads from './Downloads.js';
 import Footer from './Footer.js';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Hero></Hero>
       <Intro></Intro>
       <Ranking></Ranking>
+      <Downloads></Downloads>
       <Footer></Footer>
     </div>
   );

@@ -1,0 +1,135 @@
+.slider-wrapper {
+  display: flex;
+  height: 100%;
+  overflow: visible;
+  position: relative;
+  transition: transform 600ms ease-in-out;
+  width: 100%;
+}
+
+.slider {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .slider {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .slider {
+    font-size: 14px;
+  }
+}
+
+.slide {
+  background-color: #4653B5;
+  color: white;
+  min-height: 400px;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+
+.slide img {
+  visibility: hidden;
+}
+
+.slider-indicators {
+  bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 200px;
+}
+
+.slider-indicators button {
+  background-color: white;
+  border-radius: 100%;
+  border: none;
+  height: 28px;
+  transition: background 200ms ease;
+  width: 28px;
+}
+
+.slider-indicators button.active {
+  background-color: #D10023;
+}
+
+/* Individual slide styles */
+.slide1 {
+  background-image: url("/img/banner-1-emergencia.jpg");
+  background-size: cover;
+}
+
+.slide1-content {
+  left: 0;
+  margin: 10%  0;
+  padding: 0 3rem;
+  max-width: 380px;
+  position: absolute;
+  top: 0;
+}
+
+.slide1-content button {
+  background-color: #D10023;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+}
+
+.slide2 {
+  background-image: url("/img/banner-2-emergencia.jpg");
+  background-size: cover;
+}
+
+.slide2-content {
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 5% 3rem 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+.slide3 {
+  background-image: url("/img/banner-3-emergencia.jpg");
+  background-size: cover;
+}
+
+.slide3-content {
+  right: 0;
+  position: absolute;
+  text-align: right;
+  margin: 1rem 3rem;
+  top: 0;
+  max-width: 420px;
+}
+
+.municipios {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.municipios span {
+  background-color: #D10023;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  margin: 0.3rem;
+}
