@@ -26,6 +26,12 @@
   }
 }
 
+@media screen and (max-width: 580px) {
+  .slider {
+    font-size: 12px;
+  }
+}
+
 .slide {
   background-color: #4653B5;
   color: white;
@@ -60,10 +66,16 @@
   width: 28px;
 }
 
+@media screen and (max-width: 580px) {
+  .slider-indicators button {
+    height: 15px;
+    width: 15px;
+  }
+}
+
 .slider-indicators button:hover {
   cursor: pointer;
 }
-
 
 .slider-indicators button.active {
   background-color: #D10023;
@@ -116,6 +128,12 @@
   top: 0;
 }
 
+@media screen and (max-width: 580px) {
+  .slide2-content {
+    padding: 1rem 1rem 0;
+  }
+}
+
 .slide3 {
   background-image: url("/img/banner-3-emergencia.jpg");
   background-size: cover;
@@ -128,6 +146,13 @@
   margin: 1rem 3rem;
   top: 0;
   max-width: 420px;
+}
+
+@media screen and (max-width: 580px) {
+  .slide3-content {
+    margin: 1rem;
+    max-width: none;
+  }
 }
 
 .municipios {

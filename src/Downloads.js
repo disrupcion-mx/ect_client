@@ -78,7 +78,7 @@ export default function Downloads() {
               <h2>A través de medios electrónicos se ha invitado a las entidades:</h2>
               <div className="municipios">
                 {rankings.map(({ nombre }) => (
-                  <span>{nombre}</span>
+                  <span key={nombre}>{nombre}</span>
                 ))}
               </div>
               <h2>
