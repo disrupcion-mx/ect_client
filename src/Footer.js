@@ -1,16 +1,25 @@
 import React from "react";
+import "./css/footer.css";
 
 export default function () {
   return (
     <div className="footer">
-      <p>
-        A través de medios de electrónicos se ha invitado a los municipios de: Apodaca; Cadereyta; Escobedo; García;
-        Guadalupe; Juárez; Monterrey; Santa Catarina; San Pedro Garza; San Nicolás y Santiago. Al Gobierno del Estado de
-        Nuevo León. Se invita al Poder Legislativo, Poder Judicial y Organismos Autónomos que estén ejerciendo recursos
-        públicos a que se sumen al reto.
-      </p>
-      <p>Pueden contactar a acp@redesquintopoder.org para sumarse.</p>
-      <p>Una iniciativa de: Redes Quinto Poder, Evolución Mexicana, Colectivo Nosotros, Vértebra</p>
+      <h2>Una iniciativa por</h2>
+      <div className="iniciativapor">
+        <a href="https://www.facebook.com/RedesQuintoPoder/">
+          <img src="img/redes_quinto_poder.png" alt="Redes Quinto Poder IDEA" width="150px" height="auto" />
+        </a>
+        <a href="https://www.facebook.com/EvolMex/">
+          <img src="img/evolucion_mexicana.png" alt="Evolución Mexicana" width="200px" height="auto" />
+        </a>
+        <a href="https://www.facebook.com/colectivonosotrosNL/">
+          <img src="img/colectivo_nosotros.png" alt="Colectivo Nosotros" width="100px" height="auto" />
+        </a>
+        <a href="https://www.facebook.com/vertebranl/">
+          <img src="img/vertebra.jpg" alt="Vértebra" width="100px" height="auto" />
+        </a>
+      </div>
+      <p>Pueden contactar a <a href="mailto:acp@redesquintopoder.org">acp@redesquintopoder.org</a>  para sumarse.</p>
     </div>
   );
 }

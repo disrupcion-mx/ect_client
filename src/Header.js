@@ -8,11 +8,11 @@ export default function () {
         <img alt="Logo de Emergencia con Transparencia" height="auto" src="img/ect_logo.png" width="350px"></img>
       </div>
       <nav className="social">
-        <a href="https://www.facebook.com/">Facebook</a>
-        <a href="https://www.twitter.com/">Twitter</a>
-        <a href="https://www.youtube.com/">Youtube</a>
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="https://www.facebook.com/RedesQuintoPoder/">Facebook</a>
+        <a href="https://twitter.com/rqpidea">Twitter</a>
+        <a href="https://www.youtube.com/user/RedesQuintoPoder">Youtube</a>
+        <a href="https://www.instagram.com/redesquintopoder/">Instagram</a>
+        <a href="https://redesquintopoder.org.mx/">Sitio</a>
       </nav>
     </header>
   );
