@@ -125,7 +125,11 @@ export const score = [
     },
     {
         nombre: "San Pedro",
-        calificacion: 75
+        calificacion: 100
+    },
+    {
+      nombre: "Santa Catarina",
+      calificacion: 75,
     },
     {
         nombre: "San Nicolas",
