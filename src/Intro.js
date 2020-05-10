@@ -21,7 +21,7 @@ export default function () {
             documento que compruebe la compra y justificación del bien o servicio.
           </p>
         </div>
-        <div class="criterio">
+        <div className="criterio">
           <img alt="Apoyos Entregados" src="img/ambulance.png" height="90px" width="90px" />
           <h3>Apoyos Entregados</h3>
           <p>
@@ -29,7 +29,7 @@ export default function () {
             el bien entregado.
           </p>
         </div>
-        <div class="criterio">
+        <div className="criterio">
           <img alt="Apoyos Utilizados" src="img/bag.png" height="90px" width="90px" />
           <h3>Apoyos Utilizados</h3>
           <p>
@@ -37,7 +37,7 @@ export default function () {
             pandemia.
           </p>
         </div>
-        <div class="criterio">
+        <div className="criterio">
           <img alt="Donativos Particulares" src="img/hands.png" height="90px" width="90px" />
           <h3>Donativos Particulares</h3>
           <p>
@@ -45,7 +45,7 @@ export default function () {
             o en especie, así como expresión documental del uso o disposición final de los mismos.
           </p>
         </div>
-        <div class="criterio">
+        <div className="criterio">
           <img alt="Actualización de la Información" src="img/info.png" height="90px" width="90px" />
           <h3>Actualización de la Información</h3>
           <p>Fecha de la última actualización del micrositio y Fecha de la próxima actualización</p>

@@ -178,4 +178,8 @@ export const conceptos = [
         nombre: "Donativos Particulares",
         slug: "dontaivos"
     },
+    {
+      nombre: "Actualización de Información",
+      slug: "informacion"
+    },
 ]
