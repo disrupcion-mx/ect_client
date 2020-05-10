@@ -1,25 +1,31 @@
 import React from "react";
-import CityCard from "./CityCard.js";
+import { rankings, conceptos } from "./utils";
 
 export default function () {
-  const rankings = [
-    { name: "Monterrey", website: false },
-    { name: "Guadalupe", website: true },
-    { name: "San Nicolás", website: false },
-    { name: "Apodaca", website: true },
-    { name: "Escobedo", website: true },
-    { name: "Sta. Catarina", website: true },
-    { name: "Juárez", website: false },
-    { name: "García", website: false },
-    { name: "San Pedro", website: true },
-  ];
-
   return (
     <div className="ranking">
       <h2>Ranking:</h2>
-      {rankings.map((ranking) => (
-        <CityCard key={ranking.name} {...ranking}></CityCard>
-      ))}
+      <table>
+        <thead>
+          <tr>
+            {rankings.map((municipio) => (
+              <th key={municipio.nombre}>{municipio.nombre}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {conceptos.map((concepto) => (
+            <tr key={concepto.slug}>
+              <td>{concepto.nombre}</td>
+              {rankings.map((municipio) => (
+                <td key={`${concepto.slug}_${municipio.nombre}`}>
+                  {municipio[concepto.slug] ? "✅" : "❌"}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

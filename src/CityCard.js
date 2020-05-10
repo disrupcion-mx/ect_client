@@ -1,16 +1,17 @@
 import React from "react";
+import "./css/cards.css";
 
-export default function ({ name, website }) {
+export default function ({ nombre, sitio, insumos, entregados, utilizados, donativos, informacion }) {
   return (
     <div className="city-card">
-      <h4>{name}</h4>
+      <h4>{nombre}</h4>
       <ul>
-        <li>Micrositio: {website ? "✅" : "❌"}</li>
-        <li>Adquisición de insumos: {website ? "✅" : "❌"}</li>
-        <li>Apoyos entregados: {website ? "✅" : "❌"}</li>
-        <li>Apoyos utilizados: {website ? "✅" : "❌"}</li>
-        <li>Donativos particulares: {website ? "✅" : "❌"}</li>
-        <li>Actualización de la información.: {website ? "✅" : "❌"}</li>
+        <li>Micrositio: {sitio ? "✅" : "❌"}</li>
+        <li>Adquisición de insumos: {insumos ? "✅" : "❌"}</li>
+        <li>Apoyos entregados: {entregados ? "✅" : "❌"}</li>
+        <li>Apoyos utilizados: {utilizados ? "✅" : "❌"}</li>
+        <li>Donativos particulares: {donativos ? "✅" : "❌"}</li>
+        <li>Actualización de la información.: {informacion ? "✅" : "❌"}</li>
       </ul>
     </div>
   );
