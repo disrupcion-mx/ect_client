@@ -10,6 +10,7 @@ export default function() {
         <h2 className="text-center">Ranking</h2>        
         <Scoreboard />                
       </div>
+      <h3>Ultima revisión: 9 de Mayo de 2020</h3>
     </div>
   );
 }
