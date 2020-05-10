@@ -52,7 +52,7 @@ export default function Downloads() {
             <img alt="Fondo" src="img/banner-1-emergencia.jpg" height="auto" width="100%" />
             <div className="slide1-content">
               <h1>Transparencia es el primer paso para la rendición de cuentas</h1>
-              <button>Descarga los datos</button>
+              <a href="/descarga"><button>Descarga los datos</button></a>
             </div>
           </div>
           <div className="slide slide2">

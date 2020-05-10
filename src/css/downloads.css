@@ -60,6 +60,11 @@
   width: 28px;
 }
 
+.slider-indicators button:hover {
+  cursor: pointer;
+}
+
+
 .slider-indicators button.active {
   background-color: #D10023;
 }
@@ -88,6 +93,10 @@
   font-weight: bold;
   padding: 1rem 1rem;
   text-transform: uppercase;
+}
+
+.slide1-content button:hover {
+  cursor: pointer;
 }
 
 .slide2 {
