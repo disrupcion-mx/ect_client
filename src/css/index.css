@@ -14,6 +14,6 @@ code {
 
 #app {
   margin: 0 auto;
-  padding: 2rem 1rem;
-  max-width: 40rem;
+  padding: 0 1rem;
+  max-width: 1200px;
 }
