@@ -3,20 +3,24 @@ export const rankings = [
     nombre: "Monterrey",
     sitio: false,
     insumos: false,
+    tablas: false,    
     entregados: false,
     utilizados: false,
     donativos: false,
     informacion: false,
+    proxima: false,
     urls: [""],
   },
   {
     nombre: "Guadalupe",
     sitio: 1,
     insumos: false,
+    tablas: false,
     entregados: true,
     utilizados: true,
     donativos: false,
     informacion: false,
+    proxima: false,
     urls: [
       "http://www.guadalupe.gob.mx/apoyoscovid/",
       "http://www.guadalupe.gob.mx/coronavirus/",
@@ -26,10 +30,12 @@ export const rankings = [
     nombre: "San Nicolás",
     sitio: false,
     insumos: true,
+    tablas: true,
     entregados: true,
     utilizados: true,
     donativos: false,
     informacion: true,
+    proxima: true,
     urls: [
       "https://www.sanicolas.gob.mx/gastoscovid/",
       "https://www.sanicolas.gob.mx/category/noticias/",
@@ -39,20 +45,24 @@ export const rankings = [
     nombre: "Apodaca",
     sitio: true,
     insumos: false,
+    tablas: false,
     entregados: false,
     utilizados: false,
     donativos: false,
     informacion: false,
+    proxima: false,
     urls: ["http://coronavirus.apodaca.gob.mx/"],
   },
   {
     nombre: "Escobedo",
     sitio: true,
     insumos: true,
+    tablas: true,
     entregados: true,
     utilizados: true,
     donativos: true,
     informacion: true,
+    proxima: true,
     urls: [
       "https://escobedo.gob.mx/?p=proactiva",
       "https://escobedo.gob.mx/transparencia/proactiva/docs/COVID19_GASTO.xlsx",
@@ -63,10 +73,12 @@ export const rankings = [
     nombre: "Sta. Catarina",
     sitio: true,
     insumos: false,
+    tablas: false,
     entregados: true,
     utilizados: true,
     donativos: true,
     informacion: true,
+    proxima: false,
     urls: [
       "http://www.stacatarina.gob.mx/apps/covid19/",
       "http://www.stacatarina.gob.mx/apps/covid19/files/pagos.xlsx",
@@ -76,40 +88,48 @@ export const rankings = [
     nombre: "Juarez",
     sitio: false,
     insumos: false,
+    tablas: false,
     entregados: false,
     utilizados: false,
     donativos: false,
     informacion: false,
+    proxima: false,
     urls: [""],
   },
   {
     nombre: "García",
     sitio: false,
     insumos: false,
+    tablas: false,
     entregados: false,
     utilizados: false,
     donativos: false,
     informacion: false,
+    proxima: false,
     urls: [""],
   },
   {
     nombre: "San Pedro",
     sitio: true,
     insumos: true,
+    tablas: true,
     entregados: true,
     utilizados: true,
     donativos: true,
     informacion: true,
+    proxima: true,
     urls: ["https://sanpedro.gob.mx/coronavirus/"],
   },
   {
     nombre: "Estado de Nuevo León",
     sitio: true,
     insumos: true,
+    tablas: false,
     entregados: false,
     utilizados: false,
     donativos: false,
     informacion: true,
+    proxima: false,
     urls: [
       "http://www.nl.gob.mx/coronavirus",
       "http://www.nl.gob.mx/informefinanciero-covid-19",
@@ -119,71 +139,79 @@ export const rankings = [
 ];
 
 export const score = [
-    {
-        nombre: "Escobedo",
-        calificacion: 100
-    },
-    {
-        nombre: "San Pedro",
-        calificacion: 100
-    },
-    {
-      nombre: "Santa Catarina",
-      calificacion: 75,
-    },
-    {
-        nombre: "San Nicolas",
-        calificacion: 66
-    },
-    {
-        nombre: "Guadalupe",
-        calificacion: 50
-    },
-    {
-        nombre: "Estado de NL",
-        calificacion: 33
-    },
-    {
-        nombre: "Apodaca",
-        calificacion: 17
-    },
-    {
-        nombre: "García",
-        calificacion: 0
-    },
-    {
-        nombre: "Juárez",
-        calificacion: 0
-    },
-    {
-        nombre: "Monterrey",
-        calificacion: 0
-    },
-]
+  {
+    nombre: "Escobedo",
+    calificacion: 100,
+  },
+  {
+    nombre: "San Pedro",
+    calificacion: 100,
+  },
+  {
+    nombre: "Santa Catarina",
+    calificacion: 75,
+  },
+  {
+    nombre: "San Nicolas",
+    calificacion: 66,
+  },
+  {
+    nombre: "Guadalupe",
+    calificacion: 50,
+  },
+  {
+    nombre: "Estado de NL",
+    calificacion: 33,
+  },
+  {
+    nombre: "Apodaca",
+    calificacion: 17,
+  },
+  {
+    nombre: "García",
+    calificacion: 0,
+  },
+  {
+    nombre: "Juárez",
+    calificacion: 0,
+  },
+  {
+    nombre: "Monterrey",
+    calificacion: 0,
+  },
+];
 
 export const conceptos = [
-    {
-        nombre: "Micrositio",
-        slug: "sitio"
-    },
-    {
-        nombre: "Adquisición de Insumos",
-        slug: "insumos"
-    },
-    {
-        nombre: "Apoyos Entregados",
-        slug: "entregados"
-    },
-    {
-        nombre: "Apoyos Utilizados",
-        slug: "utilizados"
-    },
-    {
-        nombre: "Donativos Particulares",
-        slug: "dontaivos"
-    },
-    {
-      nombre: "Actualización de Información",
-      slug: "informacion"
-    },
-]
+  {
+    nombre: "Micrositio",
+    slug: "sitio",
+  },
+  {
+    nombre: "Adquisición de Insumos",
+    slug: "insumos",
+  },
+  {
+    nombre: "Tablas en Excel o Software Libre",
+    slug: "tablas",
+  },
+  {
+    nombre: "Apoyos Entregados",
+    slug: "entregados",
+  },
+  {
+    nombre: "Apoyos Utilizados",
+    slug: "utilizados",
+  },
+  {
+    nombre: "Donativos Particulares",
+    slug: "donativos",
+  },
+  {
+    nombre: "Fecha de última actualización",
+    slug: "informacion",
+  },
+  {
+    nombre: "Fecha de próxima actualización",
+    slug: "proxima",
+  },
+];
