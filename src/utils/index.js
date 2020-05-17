@@ -1,6 +1,6 @@
 export const rankings = [
   {
-    fecha: "13 de Mayo de 2020",
+    fecha: "16 de Mayo de 2020",
     municipios: [
       {
         nombre: "Monterrey",
@@ -306,7 +306,7 @@ export const rankings = [
 
 export const score = [
   {
-    fecha: "13 de Mayo de 2020",
+    fecha: "16 de Mayo de 2020",
     municipios: [
       {
         nombre: "Escobedo",
