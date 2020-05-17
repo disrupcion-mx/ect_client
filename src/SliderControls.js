@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
-export default function ({ setSlider, isActive, elements, limit }) {
+export default function ({ setSlider, active, elements, limit }) {
+  function getIndex(index) {
+    if (limit && limit !== null) return limit - index;
+    return index;
+  }
 
-    function getIndex(index) {
-        if(limit && limit !== null) return limit - index;
-        return index;
-    }
+  function isActive(index) {
+    return active === index;
+  }
 
   return (
     <div className="slider-indicators">

@@ -39,6 +39,23 @@ code {
   text-align: right;
 }
 
+.bg-image {
+  background-image: url("/img/ect-fondo.jpg");    
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;    
+  padding: 24px 12px;
+  color: white;
+}
+
+.mt {
+  margin-top: 32px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
 @media(max-width: 567px) {
   #app {
     max-width: 100%;

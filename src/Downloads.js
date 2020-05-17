@@ -3,10 +3,12 @@ import { rankings } from "./utils";
 import "./css/downloads.css";
 
 const ONE_SECOND = 1000;
-export default function Downloads() {
+export default function Downloads({ revision }) {
   // State
   const [activeSlide, setActiveSlide] = useState(0);
   const [pause, setPause] = useState(false);
+
+  const { municipios } = rankings[revision];
 
   // Refs
   const slider = useRef(null);
@@ -65,7 +67,7 @@ export default function Downloads() {
               <h1>
                 Transparencia es el primer paso para la rendición de cuentas
               </h1>
-              <a href="/descarga" className="d-block">
+              <a href={`/descarga/${revision+1}`} className="d-block">
                 <button className="button">Descarga los datos</button>
               </a>
             </div>
@@ -112,7 +114,7 @@ export default function Downloads() {
                 A través de medios electrónicos se ha invitado a las entidades:
               </h2>
               <div className="municipios">
-                {rankings.map(({ nombre }) => (
+                {municipios.map(({ nombre }) => (
                   <span key={nombre}>{nombre}</span>
                 ))}
               </div>

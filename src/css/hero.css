@@ -1,12 +1,6 @@
 .hero {
   text-align: center;
-  word-break: break-all;
-  padding: 24px 12px;
-  background-image: url("/img/ect-fondo.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+  word-break: break-all;  
 }
 
 .hero h1 {

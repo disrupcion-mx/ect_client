@@ -51,6 +51,7 @@
   justify-content: space-evenly;
   margin: auto;
   width: 200px;
+  margin-top: 20px;
 }
 
 .slider-indicators button {

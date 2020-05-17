@@ -1,17 +1,11 @@
 import React from "react";
 import "./css/hero.css";
 import Scoreboard from "./Scoreboard";
-import SliderControls from "./SliderControls";
 import { score } from "./utils";
 
-export default function ({ revision, setRevision }) {
-  function isActive(index) {
-    return revision === index;
-  }
+export default function ({ revision }) {
 
   const currentScore = score[revision];
-
-  const limit = score.length - 1;
 
   return (
     <div className="hero">
@@ -19,12 +13,6 @@ export default function ({ revision, setRevision }) {
       <div className="wrapper">
         <h2 className="text-center">Ranking</h2>
         <Scoreboard {...currentScore} />
-        <SliderControls
-          isActive={isActive}
-          setSlider={setRevision}
-          elements={score.length}
-          limit={limit}
-        />
       </div>
     </div>
   );
