@@ -4,7 +4,6 @@ import Scoreboard from "./Scoreboard";
 import { score } from "./utils";
 
 export default function ({ revision }) {
-
   const currentScore = score[revision];
 
   return (
@@ -12,7 +11,20 @@ export default function ({ revision }) {
       <h1>#EmergenciaConTransparencia</h1>
       <div className="wrapper">
         <h2 className="text-center">Ranking</h2>
-        <Scoreboard {...currentScore} />
+        <Scoreboard {...currentScore} />        
+      </div>
+      <div className="w-90">
+        <p>Este ranking solo evalúa las formas.</p>
+        <p>
+          La calificación no significa
+          aprobación y/o validación de la información publicada en los sitios de
+          los entes públicos.
+        </p>
+        <p>
+          Hacemos un llamado a la ciudadanía a revisar, verificar y comparar la
+          información publicada para así hacer valer el derecho humano de acceso
+          a la información y la rendición de cuentas.
+        </p>
       </div>
     </div>
   );
