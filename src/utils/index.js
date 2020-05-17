@@ -12,7 +12,8 @@ export const rankings = [
         donativos: false,
         informacion: false,
         proxima: false,
-        urls: [""],
+        urls: [],
+        documentos: []
       },
       {
         nombre: "Guadalupe",
@@ -29,6 +30,7 @@ export const rankings = [
           "http://www.guadalupe.gob.mx/coronavirus/",
           "http://www.guadalupe.gob.mx/transparencia-covid-19/",
         ],
+        documentos: []
       },
       {
         nombre: "San Nicolás",
@@ -111,6 +113,7 @@ export const rankings = [
         informacion: false,
         proxima: false,
         urls: ["http://juarez-nl.gob.mx/transparencia/"],
+        documentos: []
       },
       {
         nombre: "García",
@@ -141,6 +144,7 @@ export const rankings = [
           "https://sanpedro.gob.mx/coronavirus/#compras",
           "https://airtable.com/shrql5Lsg3UP3Omj6/tbldIlMdgQxw4mLiL/viwPRNsMphcQyEtl7?backgroundColor=gray&blocks=hide",
         ],
+        documentos: []
       },
       {
         nombre: "Estado de Nuevo León",
@@ -157,6 +161,7 @@ export const rankings = [
           "http://www.nl.gob.mx/informefinanciero-covid-19",
           "http://www.nl.gob.mx/series/acciones-de-apoyo-las-familias-de-nuevo-leon-ante-covid-19",
         ],
+        documentos: []
       }
     ],
   },
@@ -173,7 +178,8 @@ export const rankings = [
         donativos: false,
         informacion: false,
         proxima: false,
-        urls: [""],
+        urls: [],
+        documentos: []
       },
       {
         nombre: "Guadalupe",
@@ -189,6 +195,7 @@ export const rankings = [
           "http://www.guadalupe.gob.mx/apoyoscovid/",
           "http://www.guadalupe.gob.mx/coronavirus/",
         ],
+        documentos: []
       },
       {
         nombre: "San Nicolás",
@@ -204,6 +211,7 @@ export const rankings = [
           "https://www.sanicolas.gob.mx/gastoscovid/",
           "https://www.sanicolas.gob.mx/category/noticias/",
         ],
+        documentos: []
       },
       {
         nombre: "Apodaca",
@@ -216,6 +224,7 @@ export const rankings = [
         informacion: false,
         proxima: false,
         urls: ["http://coronavirus.apodaca.gob.mx/"],
+        documentos: []
       },
       {
         nombre: "Escobedo",
@@ -232,6 +241,7 @@ export const rankings = [
           "https://escobedo.gob.mx/transparencia/proactiva/docs/COVID19_GASTO.xlsx",
           "https://escobedo.gob.mx/?p=covid",
         ],
+        documentos: []
       },
       {
         nombre: "Sta. Catarina",
@@ -247,6 +257,7 @@ export const rankings = [
           "http://www.stacatarina.gob.mx/apps/covid19/",
           "http://www.stacatarina.gob.mx/apps/covid19/files/pagos.xlsx",
         ],
+        documentos: []
       },
       {
         nombre: "Juarez",
@@ -258,7 +269,8 @@ export const rankings = [
         donativos: false,
         informacion: false,
         proxima: false,
-        urls: [""],
+        urls: [],
+        documentos: []
       },
       {
         nombre: "García",
@@ -270,7 +282,8 @@ export const rankings = [
         donativos: false,
         informacion: false,
         proxima: false,
-        urls: [""],
+        urls: [],
+        documentos: []
       },
       {
         nombre: "San Pedro",
@@ -283,6 +296,7 @@ export const rankings = [
         informacion: true,
         proxima: true,
         urls: ["https://sanpedro.gob.mx/coronavirus/"],
+        documentos: []
       },
       {
         nombre: "Estado de Nuevo León",
@@ -299,6 +313,7 @@ export const rankings = [
           "http://www.nl.gob.mx/informefinanciero-covid-19",
           "http://www.nl.gob.mx/series/acciones-de-apoyo-las-familias-de-nuevo-leon-ante-covid-19",
         ],
+        documentos: []
       },
     ],
   },

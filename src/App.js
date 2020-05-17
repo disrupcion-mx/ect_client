@@ -5,6 +5,7 @@ import Intro from "./Intro.js";
 import Ranking from "./Ranking.js";
 import Downloads from "./Downloads.js";
 import Footer from "./Footer.js";
+import Links from "./Links";
 import SliderControls from "./SliderControls.js";
 import { rankings } from "./utils/index.js";
 
@@ -36,6 +37,7 @@ function App() {
       </div>
       <Intro></Intro>
       <Downloads revision={revision} version={version}></Downloads>
+      <Links revision={revision}></Links>
       <Footer></Footer>
     </div>
   );
