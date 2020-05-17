@@ -1,10 +1,7 @@
 import React from "react";
 import "./css/scoreboard.css";
 
-export default function ({ fecha, municipios }) {
-  municipios = municipios.sort((a, b) =>
-    a.calificacion < b.calificacion ? 1 : -1
-  );
+export default function ({ municipios }) {
   return (
     <div>
       <table className="ranking-table">
