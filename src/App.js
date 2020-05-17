@@ -15,6 +15,8 @@ function App() {
 
   const { fecha } = rankings[revision];
 
+  const version = limit - revision;
+
   return (
     <div id="app">
       <Header></Header>
@@ -28,12 +30,12 @@ function App() {
           limit={limit}
         />
         <h3 className="text-center">Fecha de Revisión: {fecha}</h3>
-        <a href={`/descarga/${revision + 1}`} className="d-block text-center">
+        <a href={`/descarga/${version + 1}`} className="d-block text-center">
           <button className="button">Descargar datos de esta revision</button>
         </a>
       </div>
       <Intro></Intro>
-      <Downloads revision={revision}></Downloads>
+      <Downloads revision={revision} version={version}></Downloads>
       <Footer></Footer>
     </div>
   );

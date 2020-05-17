@@ -3,7 +3,7 @@ import { rankings } from "./utils";
 import "./css/downloads.css";
 
 const ONE_SECOND = 1000;
-export default function Downloads({ revision }) {
+export default function Downloads({ revision, version }) {
   // State
   const [activeSlide, setActiveSlide] = useState(0);
   const [pause, setPause] = useState(false);
@@ -67,7 +67,7 @@ export default function Downloads({ revision }) {
               <h1>
                 Transparencia es el primer paso para la rendición de cuentas
               </h1>
-              <a href={`/descarga/${revision+1}`} className="d-block">
+              <a href={`/descarga/${version}`} className="d-block">
                 <button className="button">Descarga los datos</button>
               </a>
             </div>
