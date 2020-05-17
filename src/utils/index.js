@@ -1,6 +1,6 @@
 export const rankings = [
   {
-    fecha: "2020-05-13",
+    fecha: "13 de Mayo de 2020",
     municipios: [
       {
         nombre: "Monterrey",
@@ -77,13 +77,13 @@ export const rankings = [
         informacion: true,
         proxima: true,
         urls: [
-          "https://escobedo.gob.mx/?p=proactiva",,
+          "https://escobedo.gob.mx/?p=proactiva",          
           "https://escobedo.gob.mx/?p=interes",
           "https://escobedo.gob.mx/?p=covid",
         ],
         documentos: [
-          "https://escobedo.gob.mx/transparencia/proactiva/docs/COVID19_GASTO.xlsx"
-        ]
+          "https://escobedo.gob.mx/transparencia/proactiva/docs/COVID19_GASTO.xlsx",
+        ],
       },
       {
         nombre: "Sta. Catarina",
@@ -95,12 +95,10 @@ export const rankings = [
         donativos: true,
         informacion: true,
         proxima: false,
-        urls: [
-          "http://www.stacatarina.gob.mx/apps/covid19/",
-        ],
+        urls: ["http://www.stacatarina.gob.mx/apps/covid19/"],
         documentos: [
-          "http://www.stacatarina.gob.mx/apps/covid19/files/pagos.xlsx"
-        ]
+          "http://www.stacatarina.gob.mx/apps/covid19/files/pagos.xlsx",
+        ],
       },
       {
         nombre: "Juarez",
@@ -126,8 +124,8 @@ export const rankings = [
         proxima: false,
         urls: ["http://trans.garcia.gob.mx/index.php"],
         documentos: [
-          "https://docs.google.com/spreadsheets/d/1s1PzL9vesAA355P5_WXHPcXgkOi-7APZletL99sSz4I/edit#gid=585561491"
-        ]
+          "https://docs.google.com/spreadsheets/d/1s1PzL9vesAA355P5_WXHPcXgkOi-7APZletL99sSz4I/edit#gid=585561491",
+        ],
       },
       {
         nombre: "San Pedro",
@@ -139,8 +137,10 @@ export const rankings = [
         donativos: true,
         informacion: true,
         proxima: true,
-        urls: ["https://sanpedro.gob.mx/coronavirus/#compras",
-      "https://airtable.com/shrql5Lsg3UP3Omj6/tbldIlMdgQxw4mLiL/viwPRNsMphcQyEtl7?backgroundColor=gray&blocks=hide"],
+        urls: [
+          "https://sanpedro.gob.mx/coronavirus/#compras",
+          "https://airtable.com/shrql5Lsg3UP3Omj6/tbldIlMdgQxw4mLiL/viwPRNsMphcQyEtl7?backgroundColor=gray&blocks=hide",
+        ],
       },
       {
         nombre: "Estado de Nuevo León",
@@ -157,11 +157,11 @@ export const rankings = [
           "http://www.nl.gob.mx/informefinanciero-covid-19",
           "http://www.nl.gob.mx/series/acciones-de-apoyo-las-familias-de-nuevo-leon-ante-covid-19",
         ],
-      },
+      }
     ],
   },
   {
-    fecha: "2020-05-09",
+    fecha: "9 de Mayo de 2020",
     municipios: [
       {
         nombre: "Monterrey",
@@ -306,44 +306,94 @@ export const rankings = [
 
 export const score = [
   {
-    nombre: "Escobedo",
-    calificacion: 100,
+    fecha: "13 de Mayo de 2020",
+    municipios: [
+      {
+        nombre: "Escobedo",
+        calificacion: 100,
+      },
+      {
+        nombre: "San Pedro",
+        calificacion: 100,
+      },
+      {
+        nombre: "San Nicolas",
+        calificacion: 100,
+      },
+      {
+        nombre: "Santa Catarina",
+        calificacion: 91,
+      },
+      {
+        nombre: "Guadalupe",
+        calificacion: 75,
+      },
+      {
+        nombre: "Apodaca",
+        calificacion: 58,
+      },
+      {
+        nombre: "García",
+        calificacion: 58,
+      },
+      {
+        nombre: "Estado de NL",
+        calificacion: 33,
+      },
+      {
+        nombre: "Juárez",
+        calificacion: 17,
+      },
+      {
+        nombre: "Monterrey",
+        calificacion: 0,
+      },
+    ]
   },
   {
-    nombre: "San Pedro",
-    calificacion: 100,
-  },
-  {
-    nombre: "Santa Catarina",
-    calificacion: 75,
-  },
-  {
-    nombre: "San Nicolas",
-    calificacion: 66,
-  },
-  {
-    nombre: "Guadalupe",
-    calificacion: 50,
-  },
-  {
-    nombre: "Estado de NL",
-    calificacion: 33,
-  },
-  {
-    nombre: "Apodaca",
-    calificacion: 17,
-  },
-  {
-    nombre: "García",
-    calificacion: 0,
-  },
-  {
-    nombre: "Juárez",
-    calificacion: 0,
-  },
-  {
-    nombre: "Monterrey",
-    calificacion: 0,
+    fecha: "9 de Mayo de 2020",
+    municipios: [
+      {
+        nombre: "Escobedo",
+        calificacion: 100,
+      },
+      {
+        nombre: "San Pedro",
+        calificacion: 100,
+      },
+      {
+        nombre: "Santa Catarina",
+        calificacion: 75,
+      },
+      {
+        nombre: "San Nicolas",
+        calificacion: 66,
+      },
+      {
+        nombre: "Guadalupe",
+        calificacion: 50,
+      },
+      {
+        nombre: "Estado de NL",
+        calificacion: 33,
+      },
+      {
+        nombre: "Apodaca",
+        calificacion: 17,
+      },
+      {
+        nombre: "García",
+        calificacion: 0,
+      },
+      {
+        nombre: "Juárez",
+        calificacion: 0,
+      },
+      {
+        nombre: "Monterrey",
+        calificacion: 0,
+      },
+    ],
   },
 ];
 

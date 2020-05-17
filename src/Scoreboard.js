@@ -1,9 +1,10 @@
 import React from "react";
-import { score } from "./utils";
 import "./css/scoreboard.css";
 
-export default function() {
+export default function({ fecha, municipios }) {
+    municipios = municipios.sort((a,b) => a.calificacion < b.calificacion ? 1 : -1);
     return (
+        <div>
         <table className="ranking-table">
             <thead className="text-left">
                 <tr>
@@ -12,7 +13,7 @@ export default function() {
                 </tr>
             </thead>
             <tbody>
-                {score.map(municipio => (
+                {municipios.map(municipio => (
                     <tr key={municipio.nombre}>
                         <td className="text-left">{municipio.nombre}</td>
                         <td className="text-right">{municipio.calificacion}</td>
@@ -20,5 +21,7 @@ export default function() {
                 ))}
             </tbody>
         </table>
+        <h3>Fecha de Revision: {fecha}</h3>
+        </div>
     )
 }

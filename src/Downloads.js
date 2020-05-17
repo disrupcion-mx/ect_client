@@ -124,7 +124,7 @@ export default function Downloads() {
             </div>
           </div>
         </div>
-        <div className="slider-indicators">
+        <div className="slider-indicators download-slider">
           <button
             className={isActive(0) ? "active" : ""}
             aria-label="Ir a diapositiva 1"

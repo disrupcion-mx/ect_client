@@ -46,14 +46,10 @@
   visibility: hidden;
 }
 
-.slider-indicators {
-  bottom: 20px;
+.slider-indicators {  
   display: flex;
   justify-content: space-evenly;
-  left: 0;
   margin: auto;
-  position: absolute;
-  right: 0;
   width: 200px;
 }
 
@@ -64,6 +60,13 @@
   height: 28px;
   transition: background 200ms ease;
   width: 28px;
+}
+
+.download-slider {
+  bottom: 20px;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 
 @media screen and (max-width: 580px) {

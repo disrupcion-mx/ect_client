@@ -1,16 +1,31 @@
-import React from 'react';
-import './css/hero.css';
-import Scoreboard from './Scoreboard';
+import React from "react";
+import "./css/hero.css";
+import Scoreboard from "./Scoreboard";
+import SliderControls from "./SliderControls";
+import { score } from "./utils";
 
-export default function() {
+export default function ({ revision, setRevision }) {
+  function isActive(index) {
+    return revision === index;
+  }
+
+  const currentScore = score[revision];
+
+  const limit = score.length - 1;
+
   return (
     <div className="hero">
       <h1>#EmergenciaConTransparencia</h1>
       <div className="wrapper">
-        <h2 className="text-center">Ranking</h2>        
-        <Scoreboard />                
+        <h2 className="text-center">Ranking</h2>
+        <Scoreboard {...currentScore} />
+        <SliderControls
+          isActive={isActive}
+          setSlider={setRevision}
+          elements={score.length}
+          limit={limit}
+        />
       </div>
-      <h3>Ultima revisión: 9 de Mayo de 2020</h3>
     </div>
   );
 }

@@ -1,33 +1,17 @@
 import React from "react";
 import { rankings, conceptos } from "./utils";
+import RankingTable from "./RankingTable";
 
-export default function () {
+export default function ({ revision }) {
+  const ranking = rankings[revision];
+  const { municipios, fecha } = ranking;
   return (
     <div className="ranking">
       <h2 className="text-center">Criterios de Evaluación</h2>
       <div className="wrapper">
-        <table className="text-center ranking-table">
-          <thead>
-            <tr>
-              <th>Criterio</th>
-              {rankings.map((municipio) => (
-                <th key={municipio.nombre}>{municipio.nombre}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {conceptos.map((concepto) => (
-              <tr key={concepto.slug} className="text-center">
-                <td>{concepto.nombre}</td>
-                {rankings.map((municipio) => (
-                  <td key={`${concepto.slug}_${municipio.nombre}`}>
-                    {municipio[concepto.slug] ? "✅" : "❌"}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <RankingTable municipios={municipios} conceptos={conceptos} />
+        <h3 className="text-center">Fecha de Revisión: {fecha}</h3>
+        
       </div>
     </div>
   );
