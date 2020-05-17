@@ -10,7 +10,7 @@ export default function () {
           <img alt="Micrositio" src="img/laptop.png" height="auto" width="90px" />
           <h3>Micrositio</h3>
           <p>
-            Se dispone de un sitio web visible en la página de inicio del ente público sobre infromación del COVID-19.
+            Se dispone de un sitio web visible en la página de inicio del ente público sobre información de gastos del COVID-19.
           </p>
         </div>
         <div className="criterio">

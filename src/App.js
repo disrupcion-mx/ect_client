@@ -12,7 +12,7 @@ function App() {
   const [revision, setRevision] = useState(0);
 
   const limit = rankings.length - 1;
-  
+
   const { fecha } = rankings[revision];
 
   return (
@@ -21,12 +21,17 @@ function App() {
       <div className="bg-image">
         <Hero revision={revision} setRevision={setRevision}></Hero>
         <Ranking revision={revision} setRevision={setRevision}></Ranking>
-        <SliderControls active={revision} setSlider={setRevision} elements={rankings.length} limit={limit} />
-        <h3 className="text-center">Fecha de Revisión: {fecha}</h3>        
-        <a href={`/descarga/${revision+1}`} className="d-block text-center">
+        <SliderControls
+          active={revision}
+          setSlider={setRevision}
+          elements={rankings.length}
+          limit={limit}
+        />
+        <h3 className="text-center">Fecha de Revisión: {fecha}</h3>
+        <a href={`/descarga/${revision + 1}`} className="d-block text-center">
           <button className="button">Descargar datos de esta revision</button>
         </a>
-      </div>      
+      </div>
       <Intro></Intro>
       <Downloads revision={revision}></Downloads>
       <Footer></Footer>
