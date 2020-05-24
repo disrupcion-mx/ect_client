@@ -9,7 +9,7 @@ export default function ({ revision }) {
   return (
     <div className="mt">
       <h2 className="text-center">Criterios de Evaluación</h2>
-      <div className="wrapper">
+      <div className="wrapper table-container">
         <RankingTable municipios={municipios} conceptos={conceptos} />
       </div>
     </div>

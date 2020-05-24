@@ -55,8 +55,15 @@ code {
   margin: auto;
 }
 
+@media (max-width: 1100px) {
+  .table-container {
+    overflow-x: scroll;
+  }
+}
+
 @media(max-width: 567px) {
   #app {
     max-width: 100%;
   }
+  
 }

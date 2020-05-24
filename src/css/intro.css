@@ -27,13 +27,13 @@
 
 @media screen and (max-width: 580px) {
   .criterios {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
+    width: 100%;
   }
 
   .criterio {
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 100% !important;
+    display: block;
   }
 }
 
