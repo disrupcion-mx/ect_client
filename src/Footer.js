@@ -6,7 +6,7 @@ export default function () {
     <div className="footer">
       <h2>Una iniciativa por</h2>
       <div className="iniciativapor">
-        <a href="https://www.facebook.com/RedesQuintoPoder/">
+        <a href="https://www.redesquintopoder.org.mx">
           <img src="img/redes_quinto_poder.png" alt="Redes Quinto Poder IDEA" width="150px" height="auto" />
         </a>
         <a href="https://www.facebook.com/EvolMex/">
