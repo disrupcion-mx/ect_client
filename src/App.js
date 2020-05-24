@@ -23,8 +23,8 @@ function App() {
     <div id="app">
       <Header></Header>
       <div className="bg-image">
-        <Hero revision={revision} setRevision={setRevision}></Hero>
-        <Ranking revision={revision} setRevision={setRevision}></Ranking>
+        <Hero revision={revision} setRevision={setRevision} fecha={fecha}></Hero>
+        <Ranking revision={revision} setRevision={setRevision} fecha={fecha}></Ranking>
         <SliderControls
           active={revision}
           setSlider={setRevision}

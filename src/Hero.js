@@ -3,7 +3,7 @@ import "./css/hero.css";
 import Scoreboard from "./Scoreboard";
 import { score, expenses } from "./utils";
 
-export default function ({ revision }) {
+export default function ({ revision, fecha }) {
   const currentScore = score[revision];
   const currentGasto = expenses[revision];
 
@@ -13,6 +13,7 @@ export default function ({ revision }) {
       <div className="wrapper">
         <h2 className="text-center">Ranking</h2>
         <Scoreboard {...currentScore} />  
+        <h4 className="text-center">Ranking a {fecha}</h4>
       </div>
       <div className="w-90">
         <p>Este ranking solo evalúa las formas.</p>
@@ -30,6 +31,7 @@ export default function ({ revision }) {
       <div className="wrapper">
         <h2 className="text-center">Gasto Total</h2>
         <Scoreboard {...currentGasto} headers={["Entidad", "Monto"]} column="gasto" prefixes={["", "$"]} isMoney/>
+        <h4 className="text-center">Gasto a {fecha}</h4>
       </div>
     </div>
   );
