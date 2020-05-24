@@ -2,7 +2,7 @@ import React from "react";
 
 export default function () {
   return (
-    <div>
+    <div className="text-center padding">
       <iframe
         title="Gráfica de Gasto"
         src="https://flo.uri.sh/visualisation/2535588/embed"
@@ -24,6 +24,7 @@ export default function () {
           />
         </a>
       </div>
+      <a href="/gastos"><button className="button">Descargar Datos de Gasto</button></a>
     </div>
   );
 }
