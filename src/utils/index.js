@@ -1,6 +1,99 @@
-export const rankings = [
+export const expenses = [
+  {
+    fecha: "23 de Mayo de 2020",
+    municipios: [
+      {
+        nombre: "Gobierno NL",
+        gasto: 953938760
+      },
+      {
+        nombre: "Monterrey",
+        gasto: 303431577
+      },
+      {
+        nombre: "Apodaca",
+        gasto: 29719041
+      },
+      {
+        nombre: "Guadalupe",
+        gasto: 13908562
+      },
+      {
+        nombre: "Escobedo",
+        gasto: 5620816
+      },
+      {
+        nombre: "Santa Catarina",
+        gasto: 5435307
+      },
+      {
+        nombre: "San Pedro",
+        gasto: 4879862
+      },
+      {
+        nombre: "García",
+        gasto: 4093092
+      },
+      {
+        nombre: "San Nicolás",
+        gasto: 3510218
+      },
+      {
+        nombre: "Juárez",
+        gasto: 2740730
+      }
+    ]
+  },
   {
     fecha: "16 de Mayo de 2020",
+    municipios: [
+      {
+        nombre: "Gobierno NL",
+        gasto: 953938760
+      },
+      {
+        nombre: "Monterrey",
+        gasto: 0
+      },
+      {
+        nombre: "Apodaca",
+        gasto: 19815043
+      },
+      {
+        nombre: "Guadalupe",
+        gasto: 14792250
+      },
+      {
+        nombre: "Escobedo",
+        gasto: 5620816
+      },
+      {
+        nombre: "Santa Catarina",
+        gasto: 5435307
+      },
+      {
+        nombre: "San Pedro",
+        gasto: 4879862
+      },
+      {
+        nombre: "García",
+        gasto: 4093092
+      },
+      {
+        nombre: "San Nicolás",
+        gasto: 1897383
+      },
+      {
+        nombre: "Juárez",
+        gasto: 2740730
+      }
+    ]
+  }
+];
+
+export const rankings = [
+  {
+    fecha: "23 de Mayo de 2020",
     municipios: [
       {
         nombre: "Monterrey",
