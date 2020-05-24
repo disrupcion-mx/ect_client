@@ -29,7 +29,7 @@
 .micrositios .revision {
     position: absolute;
     bottom: 32px;
-    left: 0px;
+    left: 12px;
 }
 
 .w-50 {
@@ -40,8 +40,8 @@
     box-sizing: border-box;
 }
 
-.pr {
-    padding-right: 12px;
+.padding {
+    padding: 12px;
 }
 
 .mw-100 {

@@ -17,7 +17,7 @@ export default function ({ revision }) {
 
   return (
     <div className="micrositios">
-      <div className="w-50 h-100 pr">
+      <div className="w-50 h-100 padding">
         <h2>Consulta los Micrositios</h2>
         Municipio:
         <select onChange={handleChange} ref={select}>
@@ -43,7 +43,7 @@ export default function ({ revision }) {
         {municipio.documentos.length === 0 && ("No hay documentos disponibles por ahora.")}
         <p className="revision"><b>Fecha de Revision:</b> {fecha}</p>
       </div>
-      <div className="w-50 h-100">
+      <div className="w-50 h-100 padding">
         <img
           alt="Video Conferencia Redes Quinto Poder"
           src="img/conferencia.jpeg"

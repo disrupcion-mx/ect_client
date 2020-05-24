@@ -1,17 +1,18 @@
 import React from "react";
 import "./css/hero.css";
 import Scoreboard from "./Scoreboard";
-import { score } from "./utils";
+import { score, expenses } from "./utils";
 
 export default function ({ revision }) {
   const currentScore = score[revision];
+  const currentGasto = expenses[revision];
 
   return (
     <div className="hero">
       <h1>#EmergenciaConTransparencia</h1>
       <div className="wrapper">
         <h2 className="text-center">Ranking</h2>
-        <Scoreboard {...currentScore} />        
+        <Scoreboard {...currentScore} />  
       </div>
       <div className="w-90">
         <p>Este ranking solo evalúa las formas.</p>
@@ -25,6 +26,10 @@ export default function ({ revision }) {
           información publicada para así hacer valer el derecho humano de acceso
           a la información y la rendición de cuentas.
         </p>
+      </div>
+      <div className="wrapper">
+        <h2 className="text-center">Gasto Total</h2>
+        <Scoreboard {...currentGasto} headers={["Entidad", "Monto"]} column="gasto" prefixes={["", "$"]} />
       </div>
     </div>
   );
