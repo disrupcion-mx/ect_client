@@ -2,6 +2,9 @@ import React from "react";
 import "./css/scoreboard.css";
 
 export default function ({ municipios, headers, column, prefixes }) {
+
+  if(!municipios) return <div>Información no disponible para este período</div>;
+
   return (
     <div>
       <table className="ranking-table">
