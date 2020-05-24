@@ -7,6 +7,7 @@ import Downloads from "./Downloads.js";
 import Footer from "./Footer.js";
 import Links from "./Links";
 import SliderControls from "./SliderControls.js";
+import Charts from "./Charts.js";
 import { rankings } from "./utils/index.js";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         </a>
       </div>
       <Intro></Intro>
+      <Charts />
       <Downloads revision={revision} version={version}></Downloads>
       <Links revision={revision}></Links>
       <Footer></Footer>

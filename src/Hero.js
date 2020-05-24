@@ -29,7 +29,7 @@ export default function ({ revision }) {
       </div>
       <div className="wrapper">
         <h2 className="text-center">Gasto Total</h2>
-        <Scoreboard {...currentGasto} headers={["Entidad", "Monto"]} column="gasto" prefixes={["", "$"]} />
+        <Scoreboard {...currentGasto} headers={["Entidad", "Monto"]} column="gasto" prefixes={["", "$"]} isMoney/>
       </div>
     </div>
   );

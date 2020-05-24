@@ -1,9 +1,13 @@
 import React from "react";
 import "./css/scoreboard.css";
 
-export default function ({ municipios, headers, column, prefixes }) {
+export default function ({ municipios, headers, column, prefixes, isMoney }) {
 
-  if(!municipios) return <div>Información no disponible para este período</div>;
+  if(!municipios) return <div>Información no disponible para este período</div>;  
+
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
   return (
     <div>
@@ -25,7 +29,7 @@ export default function ({ municipios, headers, column, prefixes }) {
                 {prefixes ? prefixes[1] : ""}
                 {municipio.calificacion
                   ? municipio.calificacion
-                  : municipio[column]}
+                  : isMoney ? numberWithCommas(municipio[column]) : municipio[column]}
               </td>
             </tr>
           ))}
