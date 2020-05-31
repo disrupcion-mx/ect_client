@@ -4,6 +4,51 @@ export const expenses = [
     municipios: [
       {
         nombre: "Gobierno NL",
+        gasto: 1064365294
+      },
+      {
+        nombre: "Monterrey",
+        gasto: 303431577
+      },
+      {
+        nombre: "Apodaca",
+        gasto: 43495772
+      },
+      {
+        nombre: "Guadalupe",
+        gasto: 20313973
+      },
+      {
+        nombre: "Escobedo",
+        gasto: 6418616
+      },
+      {
+        nombre: "Santa Catarina",
+        gasto: 5619209
+      },
+      {
+        nombre: "San Pedro",
+        gasto: 13211991
+      },
+      {
+        nombre: "García",
+        gasto: 4093092
+      },
+      {
+        nombre: "San Nicolás",
+        gasto: 3510218
+      },
+      {
+        nombre: "Juárez",
+        gasto: 2740730
+      }
+    ]
+  },
+  {
+    fecha: "23 de Mayo de 2020",
+    municipios: [
+      {
+        nombre: "Gobierno NL",
         gasto: 953938760
       },
       {
@@ -92,6 +137,184 @@ export const expenses = [
 ];
 
 export const rankings = [
+  {
+    fecha: "30 de Mayo de 2020",
+    municipios: [
+      {
+        nombre: "Monterrey",
+        sitio: true,
+        insumos: true,
+        tablas: true,
+        entregados: true,
+        utilizados: true,
+        donativos: false,
+        informacion: true,
+        proxima: false,
+        urls: [
+          "http://www.monterrey.gob.mx/oficial/Covid-19.asp",
+          "http://www.monterrey.gob.mx/oficial/"
+        ],
+        documentos: [
+          "http://www.monterrey.gob.mx/oficial/Documentos/Contrataciones_COVID19_MTY_18052020.xlsx"
+        ]
+      },
+      {
+        nombre: "Guadalupe",
+        sitio: true,
+        insumos: true,
+        tablas: true,
+        entregados: true,
+        utilizados: true,
+        donativos: true,
+        informacion: true,
+        proxima: true,
+        urls: [
+          "http://www.guadalupe.gob.mx/",
+          "http://www.guadalupe.gob.mx/apoyoscovid/",
+          "http://www.guadalupe.gob.mx/coronavirus/",
+          "http://www.guadalupe.gob.mx/transparencia-covid-19/",
+        ],
+        documentos: []
+      },
+      {
+        nombre: "San Nicolás",
+        sitio: true,
+        insumos: true,
+        tablas: true,
+        entregados: true,
+        utilizados: true,
+        donativos: true,
+        informacion: true,
+        proxima: true,
+        urls: [
+          "https://www.sanicolas.gob.mx/gastoscovid/",
+          "https://www.sanicolas.gob.mx/category/noticias/",
+        ],
+        documentos: [
+          "https://www.sanicolas.gob.mx/wp-content/uploads/2020/05/TRANSPARENCIA-DONATIVOS-COVID-19.xlsx",
+        ],
+      },
+      {
+        nombre: "Apodaca",
+        sitio: true,
+        insumos: true,
+        tablas: true,
+        entregados: true,
+        utilizados: true,
+        donativos: true,
+        informacion: true,
+        proxima: true,
+        urls: [
+          "http://coronavirus.apodaca.gob.mx/",
+          "http://coronavirus.apodaca.gob.mx/rendicion-de-cuentas/",
+        ],
+        documentos: [
+          "http://coronavirus.apodaca.gob.mx/wp-content/uploads/2020/05/COVID-19-COTAI-Marzo-ABRIL-2020-1.xls",
+          "http://coronavirus.apodaca.gob.mx/wp-content/uploads/2020/05/TRANSPARENCIA-PROACTIVA-COVID19-v1.xlsx",
+          "http://coronavirus.apodaca.gob.mx/wp-content/uploads/2020/05/Actualiz-Donativos-de-Marzo-a-22-Mayo-v1.xlsx"
+        ],
+      },
+      {
+        nombre: "Escobedo",
+        sitio: true,
+        insumos: true,
+        tablas: true,
+        entregados: true,
+        utilizados: true,
+        donativos: true,
+        informacion: true,
+        proxima: true,
+        urls: [
+          "https://escobedo.gob.mx/?p=proactiva",          
+          "https://escobedo.gob.mx/?p=interes",
+          "https://escobedo.gob.mx/?p=covid",
+        ],
+        documentos: [
+          "https://escobedo.gob.mx/transparencia/proactiva/docs/COVID19_GASTO.xlsx",
+        ],
+      },
+      {
+        nombre: "Sta. Catarina",
+        sitio: true,
+        insumos: true,
+        tablas: true,
+        entregados: true,
+        utilizados: true,
+        donativos: true,
+        informacion: true,
+        proxima: true,
+        urls: ["http://www.stacatarina.gob.mx/apps/covid19/"],
+        documentos: [
+          "http://www.stacatarina.gob.mx/apps/covid19/files/pagos.xlsx",
+        ],
+      },
+      {
+        nombre: "Juarez",
+        sitio: false,
+        insumos: true,
+        tablas: true,
+        entregados: false,
+        utilizados: false,
+        donativos: false,
+        informacion: true,
+        proxima: false,
+        urls: ["http://juarez-nl.gob.mx/transparencia/", "http://juarez-nl.gob.mx/transparencia-covid-19/"],
+        documentos: [
+          "http://juarez-nl.gob.mx/transparencia/TRANSPARENCIACOVID/COTAI/Contrataciones_covid19_Ju%C3%A1rez.xlsx"
+        ]
+      },
+      {
+        nombre: "García",
+        sitio: false,
+        insumos: true,
+        tablas: true,
+        entregados: true,
+        utilizados: true,
+        donativos: false,
+        informacion: true,
+        proxima: false,
+        urls: ["http://trans.garcia.gob.mx/index.php"],
+        documentos: [
+          "https://docs.google.com/spreadsheets/d/1s1PzL9vesAA355P5_WXHPcXgkOi-7APZletL99sSz4I/edit#gid=585561491",
+        ],
+      },
+      {
+        nombre: "San Pedro",
+        sitio: true,
+        insumos: true,
+        tablas: true,
+        entregados: true,
+        utilizados: true,
+        donativos: true,
+        informacion: true,
+        proxima: true,
+        urls: [
+          "https://sanpedro.gob.mx/coronavirus/#compras",
+          "https://airtable.com/shrql5Lsg3UP3Omj6/tbldIlMdgQxw4mLiL/viwPRNsMphcQyEtl7?backgroundColor=gray&blocks=hide",
+        ],
+        documentos: []
+      },
+      {
+        nombre: "Estado de Nuevo León",
+        sitio: true,
+        insumos: true,
+        tablas: true,
+        entregados: false,
+        utilizados: false,
+        donativos: true,
+        informacion: true,
+        proxima: true,
+        urls: [
+          "http://www.nl.gob.mx/coronavirus",
+          "http://www.nl.gob.mx/informefinanciero-covid-19",
+          "http://www.nl.gob.mx/series/acciones-de-apoyo-las-familias-de-nuevo-leon-ante-covid-19",
+        ],
+        documentos: [
+          "http://www.nl.gob.mx/sites/default/files/donativos-covid_290520-1.pdf"
+        ]
+      }
+    ],
+  },
   {
     fecha: "23 de Mayo de 2020",
     municipios: [
@@ -589,6 +812,51 @@ export const rankings = [
 ];
 
 export const score = [
+  {
+    fecha: "30 de Mayo de 2020",
+    municipios: [
+      {
+        nombre: "Apodaca",
+        calificacion: 100,
+      },
+      {
+        nombre: "Escobedo",
+        calificacion: 100,
+      },
+      {
+        nombre: "Guadalupe",
+        calificacion: 100,
+      },
+      {
+        nombre: "San Pedro",
+        calificacion: 100,
+      },
+      {
+        nombre: "San Nicolas",
+        calificacion: 100,
+      },
+      {
+        nombre: "Santa Catarina",
+        calificacion: 100,
+      },
+      {
+        nombre: "Monterrey",
+        calificacion: 75,
+      },      
+      {
+        nombre: "Estado de NL",
+        calificacion: 66,
+      },
+      {
+        nombre: "García",
+        calificacion: 58,
+      },
+      {
+        nombre: "Juárez",
+        calificacion: 25,
+      },
+    ]
+  },
   {
     fecha: "23 de Mayo de 2020",
     municipios: [
