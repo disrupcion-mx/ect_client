@@ -2,11 +2,19 @@ import React from "react";
 import "./css/scoreboard.css";
 
 export default function ({ municipios, headers, column, prefixes, isMoney }) {
-
-  if(!municipios) return <div>Información no disponible para este período</div>;  
+  if (!municipios)
+    return <div>Información no disponible para este período</div>;
 
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  function renderStars(municipio) {
+    if (municipio.extra) {
+      return new Array(municipio.extra)
+        .fill(1)
+        .map((one, index) => <i key={index} className="fa fa-star" />);
+    }
   }
 
   return (
@@ -29,7 +37,10 @@ export default function ({ municipios, headers, column, prefixes, isMoney }) {
                 {prefixes ? prefixes[1] : ""}
                 {municipio.calificacion
                   ? municipio.calificacion
-                  : isMoney ? numberWithCommas(municipio[column]) : municipio[column]}
+                  : isMoney
+                  ? numberWithCommas(municipio[column])
+                  : municipio[column]}
+                {renderStars(municipio)}
               </td>
             </tr>
           ))}

@@ -12,8 +12,11 @@ export default function ({ revision, fecha }) {
       <h1>#EmergenciaConTransparencia</h1>
       <div className="wrapper">
         <h2 className="text-center">Ranking</h2>
-        <Scoreboard {...currentScore} />  
+        <Scoreboard {...currentScore} />
         <h4 className="text-center">Ranking a {fecha}</h4>
+        <h4>Estrellas Extras</h4>
+        <p>Criterio extra 1. Tabla del gasto resumida</p>
+        <p>Criterio extra 2. Padrón de beneficiarios</p>
       </div>
       <div className="w-90">
         <p>Este ranking solo evalúa las formas.</p>
@@ -26,7 +29,7 @@ export default function ({ revision, fecha }) {
           Hacemos un llamado a la ciudadanía a revisar, verificar y comparar la
           información publicada para así hacer valer el derecho humano de acceso
           a la información y la rendición de cuentas.
-        </p>
+        </p>        
       </div>
       <div className="wrapper">
         <h2 className="text-center">Gasto Total</h2>

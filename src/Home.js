@@ -7,6 +7,7 @@ import Links from "./Links";
 import SliderControls from "./SliderControls.js";
 import Charts from "./Charts.js";
 import { rankings } from "./utils";
+import RankingChart from './RankingChart.js';
 
 export default function () {
   const [revision, setRevision] = useState(0);
@@ -37,6 +38,8 @@ export default function () {
         </a>
       </div>
       <Intro></Intro>
+      <h3 className="chart-title px">Ranking por Revisión</h3>
+      <RankingChart />
       <Charts />
       <Downloads revision={revision} version={version}></Downloads>
       <Links revision={revision}></Links>
