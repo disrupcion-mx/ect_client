@@ -39,7 +39,7 @@ export default function ({ municipios, headers, column, prefixes, isMoney }) {
               </td>
               <td className="text-right">
                 {prefixes ? prefixes[1] : ""}
-                {municipio.calificacion
+                {municipio.calificacion !== undefined
                   ? municipio.calificacion
                   : isMoney
                   ? numberWithCommas(municipio[column])
