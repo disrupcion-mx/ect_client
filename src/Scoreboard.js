@@ -17,6 +17,10 @@ export default function ({ municipios, headers, column, prefixes, isMoney }) {
     }
   }
 
+  if(column && column !== null) {
+    municipios = municipios.sort((a,b) => a[column] < b[column] ? 1 : -1);
+  }
+
   return (
     <div>
       <table className="ranking-table">
