@@ -228,7 +228,7 @@ export const expenses = [
 
 export const rankings = [
   {
-    fecha: "6 de Junio de 2020",
+    fecha: "13 de Junio de 2020",
     municipios: [
       {
         nombre: "Monterrey",
