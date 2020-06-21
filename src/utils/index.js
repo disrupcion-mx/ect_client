@@ -1524,6 +1524,11 @@ export const score = [
         nombre: "Monterrey",
         calificacion: 100,
         extra: 2
+      },
+      {
+        nombre: "San Pedro",
+        calificacion: 100,
+        extra: 2
       },        
       {
         nombre: "García",
@@ -1537,11 +1542,6 @@ export const score = [
       },
       {
         nombre: "Juárez",
-        calificacion: 100,
-        extra: 1
-      },
-      {
-        nombre: "San Pedro",
         calificacion: 100,
         extra: 1
       },
