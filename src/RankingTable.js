@@ -17,7 +17,7 @@ export default function ({ municipios, conceptos }) {
             <td>{concepto.nombre}</td>
             {municipios.map((municipio) => (
               <td key={`${concepto.slug}_${municipio.nombre}`}>
-                {municipio[concepto.slug] ? "✅" : "❌"}
+                {municipio[concepto.slug] ? (municipio[concepto.slug] === 0.5 ? "✔️" : "✅") : "❌"}
               </td>
             ))}
           </tr>

@@ -11,6 +11,9 @@ export default function ({ municipios, headers, column, prefixes, isMoney }) {
 
   function renderStars(municipio) {
     if (municipio.extra) {
+      if(municipio.extra === 1.5) {
+        return [<i key={0} className="fa fa-star" />, <i key={1} className="fa fa-star-half-alt" />];
+      }
       return new Array(municipio.extra)
         .fill(1)
         .map((one, index) => <i key={index} className="fa fa-star" />);
