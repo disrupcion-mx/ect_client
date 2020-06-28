@@ -67,7 +67,7 @@ export default function Downloads({ revision, version }) {
               <h1>
                 Transparencia es el primer paso para la rendición de cuentas
               </h1>
-              <a href={`/descarga/${version}`} className="d-block">
+              <a href={`/descarga/${version+1}`} className="d-block">
                 <button className="button">Descarga los datos</button>
               </a>
             </div>
