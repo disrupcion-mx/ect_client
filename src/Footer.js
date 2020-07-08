@@ -20,6 +20,7 @@ export default function () {
         </a>
       </div>
       <p>Pueden contactar a <a href="mailto:acp@redesquintopoder.org">acp@redesquintopoder.org</a>  para sumarse.</p>
+      <p>Redes Quinto Poder forma parte del Hub de Periodismo de Investigación de la Frontera Norte, un proyecto del International Center for Journalists en alianza con el Border Center for Journalists and Bloggers</p>
     </div>
   );
 }
