@@ -37,6 +37,14 @@ export default function () {
           <button className="button">Descargar datos de esta revision</button>
         </a>
       </div>
+      <div style={{ minHeight: 350, alignItems: "center", display: "flex"  }}>
+        <div style={{ margin: "auto" }}>
+          <h3>Descarga los Comunicados de las Evaluaciones</h3>
+          <a href="/comunicados" className="d-block text-center">
+            <button className="button">Descargar Comunicados</button>
+          </a>
+        </div>
+      </div>
       <Intro></Intro>
       <h3 className="chart-title px">Ranking por Revisión</h3>
       <RankingChart />
