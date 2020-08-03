@@ -10,7 +10,11 @@ export default function ({ revision, fecha }) {
   return (
     <div className="hero">
       <h1>#EmergenciaConTransparencia</h1>
-      <a href="#mejorespracticas" className="button my">
+      <a
+        href="#mejorespracticas"
+        style={{ maxWidth: 400 }}
+        className="button my"
+      >
         Consulta las Mejores Prácticas
       </a>
       <div className="wrapper">
