@@ -93,6 +93,7 @@ code {
 
 .mw-100 {
   max-width: 100%;
+  overflow-x: scroll;
 }
 
 .w-100 {
@@ -119,6 +120,28 @@ code {
   text-align: center;
 }
 
-.escudo-municipio  {
-  max-width: 100px;
+td img {
+  max-width: 200px;
+}
+
+@media (max-width: 576px) {
+  td img {
+    max-width: 100px;
+  }
+}
+
+.px {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.py {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.my {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: block;
 }

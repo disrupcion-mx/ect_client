@@ -1,8 +1,9 @@
 import React from "react";
+import "./css/index.css";
 
 export default function () {
   return (
-    <div className="container">
+    <div id="mejorespracticas" className="container px">
       <h2 className="text-center">
         COMUNICADO Monterrey, Nuevo León a 2 de agosto de 2020
       </h2>
@@ -24,140 +25,145 @@ export default function () {
         las diez evaluaciones semanales, daríamos a conocer las mejores
         prácticas del ejercicio semanal, a continuación, destacamos:
       </p>
-      <table className="comunicado-table">
-        <thead>
-          <tr>
-            <th>MEJORES PRÁCTICAS</th>
-            <th>
-              Sí aportan al ejercicio del derecho humano de acceso a la
-              información y al derecho a la rendición de cuentas
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <p>Municipio de General Escobedo</p>
-              <img
-                src="/img/escobedo.jpg"
-                className="escudo-municipio"
-                alt="Escudo de Escobedo"
-              />
-            </td>
-            <td>
-              Este municipio atendió las recomendaciones y las puso práctica
-              desde la semana 1 de la evaluación. Presenta toda la información
-              sobre gasto COVID y los programas en una sola página de
-              transparencia proactiva con pestañas desplegables y descargables.
-              Cuenta con respaldo documental de insumos y de beneficiarios.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Municipio de San Pedro Garza</p>
-              <img
-                src="/img/sanpedro.png"
-                className="escudo-municipio"
-                alt="Escudo de San Pedro"
-              />
-            </td>
-            <td>
-              Este municipio atendió las recomendaciones y las puso práctica
-              desde la semana 1 de la evaluación. Presentación de toda la
-              información sobre gasto en la contingencia y otras medidas en
-              varios menús. Publicación de un padrón general de los
-              beneficiarios de uno o varios apoyos del municipio. Asimismo, un
-              seguimiento gráfico de los casos en el municipio en la sección
-              "Hechos y datos".
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Municipio de Guadalupe</p>
-              <img
-                src="/img/guadalupe.png"
-                className="escudo-municipio"
-                alt="Escudo de Guadalupe"
-              />
-            </td>
-            <td>
-              Publicación de una muestra documental de diez programas
-              emprendidos por el municipio para atender la emergencia por el
-              COVID19. Las muestras fueron publicadas en su micrositio como
-              DOCUMENTAL DE ENTREGA DE APOYOS COVID-19 y están separadas por
-              tipo de programa y documental correspondiente.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table className="comunicado-table">
-        <thead>
-          <tr>
-            <th>PRÁCTICAS QUE NO APORTAN</th>
-            <th>
-              No aportan al ejercicio del derecho humano de acceso a la
-              información y al derecho a la rendición de cuentas{" "}
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <p>Gobierno del Estado de NL</p>
-              <img
-                src="/img/estadonl.png"
-                className="escudo-municipio"
-                alt="Escudo de Estado de NL"
-              />
-            </td>
-            <td>
-              Nunca publicó facturas ni se mostró voluntad de hacer accesible y
-              publicar las pruebas documentales de los padrones. Ejerce la mayor
-              cantidad de recursos del gasto covid19. Pudo liderar la iniciativa
-              de hacer pública la mayor información posible en un formato
-              accesible para la población, sirviendo de ejemplo para los
-              municipios y otros Poderes y entes públicos.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Municipio de Juárez</p>
-              <img
-                src="/img/juarez.jpg"
-                className="escudo-municipio"
-                alt="Escudo de Juarez"
-              />
-            </td>
-            <td>
-              No publicó padrones de beneficiarios con base en un acuerdo de
-              reserva avalado por COTAI. Con esa excusa legal limitó la
-              rendición de cuentas y el acceso a la información al mismo tiempo
-              que el municipio público en redes sociales más de 680 fotografías
-              del alcalde con licencia entregando apoyos, exponiendo datos
-              personales sensibles de las personas y exponiendo a los
-              beneficiarios a la estigmatización.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Municipio de García</p>
-              <img
-                src="/img/garcia.jpg"
-                className="escudo-municipio"
-                alt="Escudo de Garcia"
-              />
-            </td>
-            <td>
-              No habilitó un micrositio limitando el ejercicio a pestañas en la
-              parte superior del sitio oficial. Si bien publicó los documentos
-              del resumen de gasto, un padrón de beneficiarios y el registro de
-              donativos, no publicó las facturas correspondientes y no mostró
-              voluntad de presentar la información de forma accesible y
-              amigable.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="mw-100">
+        <table className="comunicado-table">
+          <thead>
+            <tr>
+              <th>MEJORES PRÁCTICAS</th>
+              <th>
+                Sí aportan al ejercicio del derecho humano de acceso a la
+                información y al derecho a la rendición de cuentas
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>Municipio de General Escobedo</p>
+                <img
+                  src="/img/escobedo.jpg"
+                  className="escudo-municipio"
+                  alt="Escudo de Escobedo"
+                />
+              </td>
+              <td>
+                Este municipio atendió las recomendaciones y las puso práctica
+                desde la semana 1 de la evaluación. Presenta toda la información
+                sobre gasto COVID y los programas en una sola página de
+                transparencia proactiva con pestañas desplegables y
+                descargables. Cuenta con respaldo documental de insumos y de
+                beneficiarios.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Municipio de San Pedro Garza</p>
+                <img
+                  src="/img/sanpedro.png"
+                  className="escudo-municipio"
+                  alt="Escudo de San Pedro"
+                />
+              </td>
+              <td>
+                Este municipio atendió las recomendaciones y las puso práctica
+                desde la semana 1 de la evaluación. Presentación de toda la
+                información sobre gasto en la contingencia y otras medidas en
+                varios menús. Publicación de un padrón general de los
+                beneficiarios de uno o varios apoyos del municipio. Asimismo, un
+                seguimiento gráfico de los casos en el municipio en la sección
+                "Hechos y datos".
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Municipio de Guadalupe</p>
+                <img
+                  src="/img/guadalupe.png"
+                  className="escudo-municipio"
+                  alt="Escudo de Guadalupe"
+                />
+              </td>
+              <td>
+                Publicación de una muestra documental de diez programas
+                emprendidos por el municipio para atender la emergencia por el
+                COVID19. Las muestras fueron publicadas en su micrositio como
+                DOCUMENTAL DE ENTREGA DE APOYOS COVID-19 y están separadas por
+                tipo de programa y documental correspondiente.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="mw-100">
+        <table className="comunicado-table">
+          <thead>
+            <tr>
+              <th>PRÁCTICAS QUE NO APORTAN</th>
+              <th>
+                No aportan al ejercicio del derecho humano de acceso a la
+                información y al derecho a la rendición de cuentas{" "}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>Gobierno del Estado de NL</p>
+                <img
+                  src="/img/estadonl.png"
+                  className="escudo-municipio"
+                  alt="Escudo de Estado de NL"
+                />
+              </td>
+              <td>
+                Nunca publicó facturas ni se mostró voluntad de hacer accesible
+                y publicar las pruebas documentales de los padrones. Ejerce la
+                mayor cantidad de recursos del gasto covid19. Pudo liderar la
+                iniciativa de hacer pública la mayor información posible en un
+                formato accesible para la población, sirviendo de ejemplo para
+                los municipios y otros Poderes y entes públicos.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Municipio de Juárez</p>
+                <img
+                  src="/img/juarez.jpg"
+                  className="escudo-municipio"
+                  alt="Escudo de Juarez"
+                />
+              </td>
+              <td>
+                No publicó padrones de beneficiarios con base en un acuerdo de
+                reserva avalado por COTAI. Con esa excusa legal limitó la
+                rendición de cuentas y el acceso a la información al mismo
+                tiempo que el municipio público en redes sociales más de 680
+                fotografías del alcalde con licencia entregando apoyos,
+                exponiendo datos personales sensibles de las personas y
+                exponiendo a los beneficiarios a la estigmatización.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Municipio de García</p>
+                <img
+                  src="/img/garcia.jpg"
+                  className="escudo-municipio"
+                  alt="Escudo de Garcia"
+                />
+              </td>
+              <td>
+                No habilitó un micrositio limitando el ejercicio a pestañas en
+                la parte superior del sitio oficial. Si bien publicó los
+                documentos del resumen de gasto, un padrón de beneficiarios y el
+                registro de donativos, no publicó las facturas correspondientes
+                y no mostró voluntad de presentar la información de forma
+                accesible y amigable.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p>
         Llamamos a los entes públicos a seguir mejorando. Las organizaciones
         mantenemos abiertos los canales de comunicación, por ello durante las 10
@@ -184,7 +190,7 @@ export default function () {
         nueve de agosto, arranca la segunda etapa de Emergencia con
         Transparencia.
       </p>
-      <div className="text-center">
+      <div className="text-center py">
         <a className="button" href="/mejores_practicas">
           Descarga el Comunicado
         </a>
