@@ -185,7 +185,9 @@ export default function () {
         Transparencia.
       </p>
       <div className="text-center">
-        <button className="button">Descarga el Comunicado</button>
+        <button className="button" href="/mejores_practicas">
+          Descarga el Comunicado
+        </button>
       </div>
     </div>
   );
