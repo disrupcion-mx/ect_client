@@ -37,7 +37,7 @@ export default function () {
         <tbody>
           <tr>
             <td>
-              Municipio de General Escobedo
+              <p>Municipio de General Escobedo</p>
               <img
                 src="/img/escobedo.jpg"
                 className="escudo-municipio"
@@ -54,9 +54,9 @@ export default function () {
           </tr>
           <tr>
             <td>
-              Municipio de San Pedro Garza
+              <p>Municipio de San Pedro Garza</p>
               <img
-                src="/img/sanpedro.jpg"
+                src="/img/sanpedro.png"
                 className="escudo-municipio"
                 alt="Escudo de San Pedro"
               />
@@ -73,9 +73,9 @@ export default function () {
           </tr>
           <tr>
             <td>
-              Municipio de Guadalupe
+              <p>Municipio de Guadalupe</p>
               <img
-                src="/img/guadalupe.jpg"
+                src="/img/guadalupe.png"
                 className="escudo-municipio"
                 alt="Escudo de Guadalupe"
               />
@@ -103,9 +103,9 @@ export default function () {
         <tbody>
           <tr>
             <td>
-              Gobierno del Estado de NL
+              <p>Gobierno del Estado de NL</p>
               <img
-                src="/img/estadonl.jpg"
+                src="/img/estadonl.png"
                 className="escudo-municipio"
                 alt="Escudo de Estado de NL"
               />
@@ -121,7 +121,7 @@ export default function () {
           </tr>
           <tr>
             <td>
-              Municipio de Juárez
+              <p>Municipio de Juárez</p>
               <img
                 src="/img/juarez.jpg"
                 className="escudo-municipio"
@@ -140,7 +140,7 @@ export default function () {
           </tr>
           <tr>
             <td>
-              Municipio de García
+              <p>Municipio de García</p>
               <img
                 src="/img/garcia.jpg"
                 className="escudo-municipio"

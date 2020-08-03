@@ -115,6 +115,10 @@ code {
   border: 1px solid #2b2b2b;
 }
 
+.comunicado-table td p {
+  text-align: center;
+}
+
 .escudo-municipio  {
   max-width: 100px;
 }
