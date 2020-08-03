@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Hero from "./Hero.js";
 import Intro from "./Intro.js";
 import Ranking from "./Ranking.js";
@@ -7,7 +7,8 @@ import Links from "./Links";
 import SliderControls from "./SliderControls.js";
 import Charts from "./Charts.js";
 import { rankings } from "./utils";
-import RankingChart from './RankingChart.js';
+import RankingChart from "./RankingChart.js";
+import Comunicado from "./Comunicado";
 
 export default function () {
   const [revision, setRevision] = useState(0);
@@ -37,7 +38,7 @@ export default function () {
           <button className="button">Descargar datos de esta revision</button>
         </a>
       </div>
-      <div style={{ minHeight: 350, alignItems: "center", display: "flex"  }}>
+      <div style={{ minHeight: 350, alignItems: "center", display: "flex" }}>
         <div style={{ margin: "auto" }}>
           <h3>Descarga los Comunicados de las Evaluaciones</h3>
           <a href="/comunicados" className="d-block text-center">
@@ -48,6 +49,7 @@ export default function () {
       <Intro></Intro>
       <h3 className="chart-title px">Ranking por Revisión</h3>
       <RankingChart />
+      <Comunicado />
       <Charts />
       <Downloads revision={revision} version={version}></Downloads>
       <Links revision={revision}></Links>
