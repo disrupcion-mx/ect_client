@@ -12,7 +12,7 @@ export default function ({ revision, fecha }) {
       <h1>#EmergenciaConTransparencia</h1>
       <a
         href="#mejorespracticas"
-        style={{ maxWidth: 400 }}
+        style={{ maxWidth: 400, margin: "auto", display: "block" }}
         className="button my"
       >
         Consulta las Mejores Prácticas
