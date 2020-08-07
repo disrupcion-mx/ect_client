@@ -2769,3 +2769,10 @@ export const conceptos = [
     slug: "proxima",
   },
 ];
+
+export const revisionMensual = [
+  {
+    nombre: "",
+    ranking: 0
+  }
+]

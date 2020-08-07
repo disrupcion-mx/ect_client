@@ -1,11 +1,10 @@
 import React from "react";
 import "./css/hero.css";
 import Scoreboard from "./Scoreboard";
-import { score, expenses } from "./utils";
 
-export default function ({ revision, fecha }) {
+export default function ({ revision, fecha, score, gastos }) {
   const currentScore = score[revision];
-  const currentGasto = expenses[revision];
+  const currentGasto = gastos[revision];
 
   return (
     <div className="hero">

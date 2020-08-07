@@ -145,3 +145,25 @@ td img {
   margin-bottom: 12px;
   display: block;
 }
+
+.bg-white {
+  background-color: #fff;
+}
+
+.tab-group {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 35px;
+}
+
+.tab {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 6px solid #050973;
+}

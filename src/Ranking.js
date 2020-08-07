@@ -1,10 +1,7 @@
 import React from "react";
-import { rankings, conceptos } from "./utils";
 import RankingTable from "./RankingTable";
 
-export default function ({ revision }) {
-  const ranking = rankings[revision];
-  const { municipios } = ranking;
+export default function ({ conceptos, municipios }) {
 
   return (
     <div className="mt">

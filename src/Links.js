@@ -1,8 +1,7 @@
 import React, { useState, useRef } from "react";
-import { rankings } from "./utils";
 import "./css/micrositios.css";
 
-export default function ({ revision }) {
+export default function ({ revision, rankings }) {
   let { municipios, fecha } = rankings[revision];
 
   const [municipio, setMunicipio] = useState(municipios[0]);
@@ -11,8 +10,32 @@ export default function ({ revision }) {
 
   function handleChange() {
     const { value } = select.current;
-    const selected = municipios.find(municipio => municipio.nombre === value);
-    if(selected) setMunicipio(selected);
+    const selected = municipios.find((municipio) => municipio.nombre === value);
+    if (selected) setMunicipio(selected);
+  }
+
+  function renderEnlaces(municipio) {
+    if (municipio.urls && municipio.urls !== null) {
+      if (municipio.urls.length > 0)
+      return municipio.urls.map((url, index) => (
+        <a key={`url-${index}`} href={url} className="d-block">
+          {url}
+        </a>
+      ));
+    }
+    return "No hay enlaces disponibles por ahora.";
+  }
+
+  function renderDocumentos(municipio) {
+    if(municipio.documentos && municipio.documentos !== null) {
+      if(municipio.documentos.length > 0)
+      return municipio.documentos.map((url, index) => (
+        <a key={`doc-${index}`} href={url} className="d-block">
+          {url}
+        </a>
+      ));
+    }
+    return "No hay documentos disponibles.";
   }
 
   return (
@@ -28,20 +51,12 @@ export default function ({ revision }) {
           ))}
         </select>
         <h3>Enlaces</h3>
-        {municipio.urls.map((url, index) => (
-          <a key={`url-${index}`} href={url} className="d-block">
-            {url}
-          </a>
-        ))}
-        {municipio.urls.length === 0 && ("No hay enlaces disponibles por ahora.")}
+        {renderEnlaces(municipio)}
         <h3>Documentos</h3>
-        {municipio.documentos.map((url, index) => (
-          <a key={`doc-${index}`} href={url} className="d-block">
-            {url}
-          </a>
-        ))}
-        {municipio.documentos.length === 0 && ("No hay documentos disponibles por ahora.")}
-        <p className="revision"><b>Fecha de Revision:</b> {fecha}</p>
+        {renderDocumentos(municipio)}
+        <p className="revision">
+          <b>Fecha de Revision:</b> {fecha}
+        </p>
       </div>
       <div className="w-50 h-100 padding">
         <img
