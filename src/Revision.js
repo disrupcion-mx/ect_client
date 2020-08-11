@@ -25,8 +25,6 @@ export default function ({
   score,
   tipo
 }) {
-
-  console.log(municipios);
   return (
     <>
       <div className="bg-image">
@@ -37,6 +35,7 @@ export default function ({
           gastos={gastos}
           score={score}
           conceptos={conceptos}
+          tipo={tipo}
         />
         <SliderControls
           active={revision}
@@ -65,21 +64,18 @@ export default function ({
           </div>
         </div>
       )}
-      <div style={{ minHeight: 350, alignItems: "center", display: "flex" }}>
-        <div style={{ margin: "auto" }}>
-          <h3>Descarga el comunicado de las Evaluaciones Mensuales</h3>
-          <a href="/comunicadoMensual" className="d-block text-center">
-            <button className="button">Descargar el comunicado mensual</button>
-          </a>
+      {tipo !== 1 && (
+        <div style={{ minHeight: 350, alignItems: "center", display: "flex" }}>
+          <div style={{ margin: "auto" }}>
+            <h3>Descarga el comunicado de las Evaluaciones Mensuales</h3>
+            <a href="/comunicadoMensual" className="d-block text-center">
+              <button className="button">
+                Descargar el comunicado mensual
+              </button>
+            </a>
+          </div>
         </div>
-      </div>
-      <a
-        href="#mejorespracticas"
-        style={{ maxWidth: 400, margin: "auto", display: "block" }}
-        className="button my"
-      >
-        Consulta las Mejores Prácticas de las 10 semanas
-      </a>
+      )}
       <Intro></Intro>
       <h3 className="chart-title px">Ranking por Revisión</h3>
       {tipo === 1 && (

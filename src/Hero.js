@@ -2,14 +2,22 @@ import React from "react";
 import "./css/hero.css";
 import Scoreboard from "./Scoreboard";
 
-export default function ({ revision, fecha, score, gastos }) {
+export default function ({ revision, fecha, score, gastos, tipo }) {
   const currentScore = score[revision];
   const currentGasto = gastos[revision];
 
   return (
     <div className="hero">
       <h1>#EmergenciaConTransparencia</h1>
-      
+      {tipo === 1 && (
+        <a
+          href="#mejorespracticas"
+          style={{ maxWidth: 400, margin: "auto", display: "block" }}
+          className="button my text-center"
+        >
+          Consulta las Mejores Prácticas de las 10 semanas
+        </a>
+      )}
       <div className="wrapper">
         <h2 className="text-center">Ranking</h2>
         <Scoreboard {...currentScore} />
