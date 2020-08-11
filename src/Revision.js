@@ -8,6 +8,9 @@ import SliderControls from "./SliderControls.js";
 import Charts from "./Charts.js";
 import RankingChart from "./RankingChart.js";
 import Comunicado from "./Comunicado";
+import RankingChartMensual from "./RankingChartMensual.js";
+import ChartMensual from "./ChartMensual.js";
+import GastoEstadoMensual from "./GastoEstadoChart.js";
 
 export default function ({
   revision,
@@ -50,7 +53,8 @@ export default function ({
           <button className="button">Descargar datos de esta revision</button>
         </a>
       </div>
-      <div style={{ minHeight: 350, alignItems: "center", display: "flex" }}>
+      {tipo === 1 && (
+        <div style={{ minHeight: 350, alignItems: "center", display: "flex" }}>
         <div style={{ margin: "auto" }}>
           <h3>Descarga los Comunicados de las Evaluaciones</h3>
           <a href="/comunicados" className="d-block text-center">
@@ -58,6 +62,24 @@ export default function ({
           </a>
         </div>
       </div>
+              )}
+      
+
+      <div style={{ minHeight: 350, alignItems: "center", display: "flex" }}>
+        <div style={{ margin: "auto" }}>
+          <h3>Descarga el comunicado de las Evaluaciones Mensuales</h3>
+          <a href="/comunicadoMensual" className="d-block text-center">
+            <button className="button">Descargar el comunicado mensual</button>
+          </a>
+        </div>
+      </div>
+      <a
+        href="#mejorespracticas"
+        style={{ maxWidth: 400, margin: "auto", display: "block" }}
+        className="button my"
+      >
+        Consulta las Mejores Prácticas de las 10 semanas
+      </a>
       <Intro></Intro>
       <h3 className="chart-title px">Ranking por Revisión</h3>
       {tipo === 1 && (
@@ -66,8 +88,17 @@ export default function ({
           <Comunicado /> <Charts />
         </>
       )}
+      {tipo !== 1 && (
+        <>
+          <RankingChartMensual />
+          <h1>Gastos por Municipio</h1>
+           <ChartMensual />  <h1>Gastos Estatales</h1> <GastoEstadoMensual/>
+        </>
+      )}
       <Downloads revision={revision} version={version}></Downloads>
       <Links rankings={rankings} revision={revision}></Links>
+
+      
     </>
   );
 }

@@ -2234,7 +2234,7 @@ export const rankings = [
   },
 ];
 
-export const score = [
+export const score = [  
   {
     fecha: "11 de Julio de 2020",
     municipios: [
@@ -2769,10 +2769,3 @@ export const conceptos = [
     slug: "proxima",
   },
 ];
-
-export const revisionMensual = [
-  {
-    nombre: "",
-    ranking: 0
-  }
-]

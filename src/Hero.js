@@ -9,13 +9,7 @@ export default function ({ revision, fecha, score, gastos }) {
   return (
     <div className="hero">
       <h1>#EmergenciaConTransparencia</h1>
-      <a
-        href="#mejorespracticas"
-        style={{ maxWidth: 400, margin: "auto", display: "block" }}
-        className="button my"
-      >
-        Consulta las Mejores Prácticas
-      </a>
+      
       <div className="wrapper">
         <h2 className="text-center">Ranking</h2>
         <Scoreboard {...currentScore} />

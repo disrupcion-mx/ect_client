@@ -6,7 +6,7 @@ import Tabs from "./Tabs.js";
 
 export default function () {
   const [revision, setRevision] = useState(0);
-  const [tipo, setTipo] = useState(1);
+  const [tipo, setTipo] = useState(2);
 
   const limit = rankings.length - 1;
 
@@ -29,10 +29,10 @@ export default function () {
           setRevision={setRevision}
         />
       )}
-      {tipo === 2 && (
+      {tipo !==1 && (
         <Revision
           version={version}
-          fecha={fecha}
+          fecha={gastosMes[0].fecha}
           revision={revision}
           rankings={rankingsMes}
           conceptos={conceptosMes}
