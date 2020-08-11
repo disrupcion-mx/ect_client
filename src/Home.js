@@ -13,6 +13,11 @@ export default function () {
   const { fecha } = rankings[revision];
 
   const version = limit - revision;
+
+  const municipiosMes = rankingsMes[0].municipios;
+
+  const municipiosSemana = rankings[version].municipios;
+
   return (
     <>
       <Tabs tipo={tipo} setTipo={setTipo} />
@@ -26,6 +31,7 @@ export default function () {
           gastos={expenses}
           score={score}
           tipo={tipo}
+          municipios={municipiosSemana}
           setRevision={setRevision}
         />
       )}
@@ -38,6 +44,7 @@ export default function () {
           conceptos={conceptosMes}
           score={scoreMes}
           gastos={gastosMes}
+          municipios={municipiosMes}
           setRevision={setRevision}
         />
       )}

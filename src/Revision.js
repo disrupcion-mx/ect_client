@@ -25,6 +25,8 @@ export default function ({
   score,
   tipo
 }) {
+
+  console.log(municipios);
   return (
     <>
       <div className="bg-image">
@@ -36,17 +38,17 @@ export default function ({
           score={score}
           conceptos={conceptos}
         />
-        <Ranking
-          revision={revision}
-          setRevision={setRevision}
-          municipios={municipios}
-          conceptos={conceptos}
-        />
         <SliderControls
           active={revision}
           setSlider={setRevision}
           elements={rankings.length}
           limit={limit}
+        />
+        <Ranking
+          revision={revision}
+          setRevision={setRevision}
+          municipios={municipios}
+          conceptos={conceptos}
         />
         <h3 className="text-center">Fecha de Revisión: {fecha}</h3>
         <a href={`/descarga/${version + 1}`} className="d-block text-center">
@@ -55,16 +57,14 @@ export default function ({
       </div>
       {tipo === 1 && (
         <div style={{ minHeight: 350, alignItems: "center", display: "flex" }}>
-        <div style={{ margin: "auto" }}>
-          <h3>Descarga los Comunicados de las Evaluaciones</h3>
-          <a href="/comunicados" className="d-block text-center">
-            <button className="button">Descargar Comunicados</button>
-          </a>
+          <div style={{ margin: "auto" }}>
+            <h3>Descarga los Comunicados de las Evaluaciones</h3>
+            <a href="/comunicados" className="d-block text-center">
+              <button className="button">Descargar Comunicados</button>
+            </a>
+          </div>
         </div>
-      </div>
-              )}
-      
-
+      )}
       <div style={{ minHeight: 350, alignItems: "center", display: "flex" }}>
         <div style={{ margin: "auto" }}>
           <h3>Descarga el comunicado de las Evaluaciones Mensuales</h3>
@@ -85,20 +85,19 @@ export default function ({
       {tipo === 1 && (
         <>
           <RankingChart />
-          <Comunicado /> <Charts />
+          <Comunicado />
+          <Charts />
         </>
       )}
       {tipo !== 1 && (
         <>
           <RankingChartMensual />
           <h1>Gastos por Municipio</h1>
-           <ChartMensual />  <h1>Gastos Estatales</h1> <GastoEstadoMensual/>
+          <ChartMensual /> <h1>Gastos Estatales</h1> <GastoEstadoMensual />
         </>
       )}
       <Downloads revision={revision} version={version}></Downloads>
       <Links rankings={rankings} revision={revision}></Links>
-
-      
     </>
   );
 }

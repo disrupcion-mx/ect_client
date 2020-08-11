@@ -21,8 +21,8 @@ export default function ({ municipios, conceptos }) {
 
   function renderCalificacion(concepto) {
     if(concepto && concepto !== null) {
-      if(concepto.municipios && concepto.municipios !== null) {
-        return concepto.municipios.map((municipio) => (
+      if(municipios && municipios !== null) {
+        return municipios.map((municipio) => (
           <td key={`${concepto.slug}_${municipio.nombre}`}>
             {municipio[concepto.slug]
               ? municipio[concepto.slug] === 0.5
