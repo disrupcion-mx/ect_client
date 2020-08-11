@@ -1,6 +1,7 @@
 /* Colores de referencia */
 :root {
   --blue: #050973;
+  --purple: #6062a3;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 a {
-  color: #050973;
+  color: var(--blue);
 }
 
 code {

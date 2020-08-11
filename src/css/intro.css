@@ -1,5 +1,5 @@
 .intro h2 {
-  color: #050973;
+  color: var(--blue);
   font-weight: bold;
   text-align: center;
   padding: 0 0.5rem;
@@ -44,7 +44,7 @@
 }
 
 .criterio h3 {
-  color: #050973;
+  color: var(--blue);
   margin-bottom: 0.5rem;
   min-height: 3rem;
 }

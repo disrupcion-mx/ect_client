@@ -3,7 +3,7 @@
 }
 
 .footer h2 {
-  color: #050973;
+  color: var(--blue);
 }
 
 .iniciativapor {
