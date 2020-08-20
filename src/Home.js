@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { rankings, conceptos, expenses, score } from "./utils";
-import { rankingsMes, conceptosMes, gastosMes, scoreMes } from "./utils/mensual";
+import {
+  rankingsMes,
+  conceptosMes,
+  gastosMes,
+  scoreMes,
+} from "./utils/mensual";
 import Revision from "./Revision.js";
 import Tabs from "./Tabs.js";
 
@@ -8,11 +13,11 @@ export default function () {
   const [revision, setRevision] = useState(0);
   const [tipo, setTipo] = useState(2);
 
-  console.log(revision);
-
   const { fecha } = rankings[revision];
 
-  const municipiosMes = rankingsMes[revision] ? rankingsMes[revision].municipios : rankingsMes[0].municipios;
+  const municipiosMes = rankingsMes[revision]
+    ? rankingsMes[revision].municipios
+    : rankingsMes[0].municipios;
 
   const municipiosSemana = rankings[revision].municipios;
 
@@ -32,7 +37,7 @@ export default function () {
           setRevision={setRevision}
         />
       )}
-      {tipo !==1 && (
+      {tipo !== 1 && (
         <Revision
           fecha={gastosMes[0].fecha}
           revision={revision}

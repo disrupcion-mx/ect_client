@@ -9,6 +9,13 @@ export default function ({ revision, fecha, score, gastos, tipo }) {
   return (
     <div className="hero">
       <h1>#EmergenciaConTransparencia</h1>
+      <a
+        href="/relatoria"
+        className="button d-block"
+        style={{ marginBottom: 24, maxWidth: 250, margin: "auto" }}
+      >
+        Consulta la Relatoria
+      </a>
       {tipo === 1 && (
         <a
           href="#mejorespracticas"

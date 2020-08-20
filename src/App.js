@@ -5,9 +5,9 @@ import Descargables from "./Descargables";
 import Home from "./Home";
 import Foto from "./Foto";
 import { Router } from "@reach/router";
+import Relatoria from "./Relatoria.js";
 
 function App() {
-
   return (
     <div id="app">
       <Header></Header>
@@ -15,6 +15,7 @@ function App() {
         <Home path="/" />
         <Descargables path="/propuesta_tabla_gasto" />
         <Foto path="/monterrey_junio2020" />
+        <Relatoria path="/relatoria" />
       </Router>
       <Footer></Footer>
     </div>
