@@ -4,9 +4,7 @@ import "./css/index.css";
 export default function () {
   return (
     <div id="mejorespracticas" className="container px">
-      <h2 className="text-center">
-        COMUNICADO Monterrey, Nuevo León a 2 de agosto de 2020
-      </h2>
+      <h2 className="subtitle">COMUNICADO DE MEJORES PRACTICAS</h2>
       <h3 className="text-center">
         Monterrey, Nuevo León a 2 de agosto de 2020
       </h3>
@@ -190,7 +188,10 @@ export default function () {
         nueve de agosto, arranca la segunda etapa de Emergencia con
         Transparencia.
       </p>
-      <div className="text-center py">
+      <div
+        className="text-center py"
+        style={{ marginBottom: 32, marginTop: 32 }}
+      >
         <a className="button" href="/mejores_practicas">
           Descarga el Comunicado
         </a>

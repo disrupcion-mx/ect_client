@@ -11,15 +11,19 @@ export default function ({ setSlider, active, elements, limit }) {
   }
 
   return (
-    <div className="slider-indicators">
-      {new Array(elements).fill(1).map((one, index) => (
-        <button
-          key={index}
-          className={isActive(getIndex(index)) ? "active" : ""}
-          aria-label="Ir a diapositiva 1"
-          onClick={() => setSlider(getIndex(index))}
-        />
-      ))}
-    </div>
+    <>
+      <h4>Navega por las Revisiones</h4>
+      <div className="slider-indicators">
+        {new Array(elements).fill(1).map((one, index) => (
+          <button
+            key={index}
+            className={isActive(getIndex(index)) ? "active" : ""}
+            aria-label="Ir a diapositiva 1"
+            onClick={() => setSlider(getIndex(index))}
+          />
+        ))}
+      </div>
+      <p>Consulta el Ranking, Gasto y Criterios de Evaluación por Revision</p>
+    </>
   );
 }

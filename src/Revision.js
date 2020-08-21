@@ -4,7 +4,6 @@ import Intro from "./Intro.js";
 import Ranking from "./Ranking.js";
 import Downloads from "./Downloads.js";
 import Links from "./Links";
-import SliderControls from "./SliderControls.js";
 import Charts from "./Charts.js";
 import RankingChart from "./RankingChart.js";
 import Comunicado from "./Comunicado";
@@ -17,13 +16,12 @@ export default function ({
   setRevision,
   fecha,
   rankings,
-  limit,
   version,
   conceptos,
   municipios,
   gastos,
   score,
-  tipo
+  tipo,
 }) {
   return (
     <>
@@ -36,12 +34,7 @@ export default function ({
           score={score}
           conceptos={conceptos}
           tipo={tipo}
-        />
-        <SliderControls
-          active={revision}
-          setSlider={setRevision}
-          elements={rankings.length}
-          limit={limit}
+          rankings={rankings}
         />
         <Ranking
           revision={revision}
@@ -81,8 +74,8 @@ export default function ({
       {tipo === 1 && (
         <>
           <RankingChart />
-          <Comunicado />
           <Charts />
+          <Comunicado />
         </>
       )}
       {tipo !== 1 && (
@@ -94,6 +87,29 @@ export default function ({
       )}
       <Downloads revision={revision} version={version}></Downloads>
       <Links rankings={rankings} revision={revision}></Links>
+      {tipo === 1 && (
+        <>
+          <div
+            style={{
+              height: 150,
+              backgroundColor: "#fff",
+              position: "absolute",
+              width: "100%",
+            }}
+          >
+            <h2 className="subtitle" style={{ marginTop: 75 }}>
+              Relatoría Emergencia con Transparencia
+            </h2>
+          </div>
+          <iframe
+            id="relatoria"
+            title="Relatoria"
+            width="100%"
+            height="800px"
+            src="https://quesirvan.mx/2020/08/09/gasto-covid19-nuevoleon-apertura/"
+          />
+        </>
+      )}
     </>
   );
 }

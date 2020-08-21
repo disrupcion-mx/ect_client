@@ -168,3 +168,9 @@ td img {
 .selected {
   border-bottom: 6px solid rgb(184, 3, 3);
 }
+
+.subtitle {
+  text-align: center;
+  color: #050973;
+  font-weight: bold;
+}

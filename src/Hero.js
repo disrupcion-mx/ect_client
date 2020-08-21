@@ -1,31 +1,58 @@
 import React from "react";
 import "./css/hero.css";
 import Scoreboard from "./Scoreboard";
+import SliderControls from "./SliderControls.js";
 
-export default function ({ revision, fecha, score, gastos, tipo }) {
+export default function ({
+  revision,
+  fecha,
+  score,
+  gastos,
+  tipo,
+  setRevision,
+  rankings,
+  limit,
+}) {
   const currentScore = score[revision];
   const currentGasto = gastos[revision];
 
   return (
     <div className="hero">
       <h1>#EmergenciaConTransparencia</h1>
-      <a
-        href="/relatoria"
-        className="button d-block"
-        style={{ marginBottom: 24, maxWidth: 250, margin: "auto" }}
-      >
-        Consulta la Relatoria
-      </a>
       {tipo === 1 && (
-        <a
-          href="#mejorespracticas"
-          style={{ maxWidth: 400, margin: "auto", display: "block" }}
-          className="button my text-center"
-        >
-          Consulta las Mejores Prácticas de las 10 semanas
-        </a>
+        <>
+          <a
+            href="#relatoria"
+            className="button d-block"
+            style={{
+              marginBottom: 24,
+              maxWidth: 250,
+              margin: "auto",
+            }}
+          >
+            Consulta la Relatoria
+          </a>
+          <a
+            href="#mejorespracticas"
+            style={{
+              maxWidth: 400,
+              margin: "auto",
+              marginTop: 24,
+              display: "block",
+            }}
+            className="button my text-center"
+          >
+            Consulta las Mejores Prácticas
+          </a>
+        </>
       )}
       <div className="wrapper">
+        <SliderControls
+          active={revision}
+          setSlider={setRevision}
+          elements={rankings.length}
+          limit={limit}
+        />
         <h2 className="text-center">Ranking</h2>
         <Scoreboard {...currentScore} />
         <h4 className="text-center">Ranking a {fecha}</h4>
